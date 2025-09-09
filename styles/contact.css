@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 1);
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50px);
+    padding-right: 30px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+.miima-contact-logo{
+    width: 10rem;
+}
+
+.head-mid-contact{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 22px;
+}
+
+header button{
+    border: none;
+    background-color: rgba(226, 17, 17, 0.75);
+    color: rgba(255, 255, 255, 1);
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15PX;
+    transform: translateY(-10px);
+    margin-right: 30px;
+}
+
+
+.main-text{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.main-text h2{
+    font-size: 2.7rem;
+    white-space: normal;
+    width: 50%;
+    text-align: center;
+}
+
+.main-text p{
+    font-size: 20px;
+}
+
+.wrapper1{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-inline: 10%;
+    border-radius: 15px;
+    margin-top: 4rem;
+    background-color: rgba(25, 25, 71, 1);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 20px;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+}
+
+.name-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.email-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.message-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.name{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    outline: none;
+}
+
+.email{
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    outline: none;
+}
+
+.message{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    outline: none;
+}
+
+.attract-img{
+    width: 55%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+}
+
+.contact-form button{
+    width: 30%;
+    padding: 5px;
+    background-color: rgba(7, 212, 248, 1);
+    border: none;
+    font-weight: bold;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5%;
+    margin-top: 10rem;
+}
+
+.wleft2{
+    display: flex;
+    flex-direction: column;
+}
+
+.st-row{ 
+    gap: 0;
+    h2{
+    font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+        white-space: normal;
+        width: 85%;
+    }
+}
+
+.nd-row{
+    h5{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+        transform: translateY(-30px);
+    }
+}
+
+.rd-row{
+    h5{
+     font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+        transform: translateY(-30px);
+    }
+}
+
+.wrapper3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    margin-inline: 10%;
+    height: 100%;
+}
+
+.left3 img{
+    height: 100%;
+}
+
+.right3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-inline: 30px;
+    font-size: 20px;
+    background-color: rgba(7, 212, 248, 1);
+}
+
+.additional{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+}
+
+footer{
+    background-color: rgb(25, 25, 71);
+    padding-inline: 30px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.col-foot{
+    display: flex;
+    flex-direction: row;
+}
+
+.stcol-foot h4{
+    white-space: normal;
+    width: 50%;
+}
+
+.ndcol-foot{
+    padding-top: 25px;
+}
+
+.ndcol-foot-i{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-foot{
+    width: 30%;
+}
+
+.rdcol-foot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.rdcol-foot input{
+    height: 20px;
+    width: 20rem;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.rdcol-foot button{
+    border: none;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 2.5rem;
+    background-color: rgba(53, 117, 236, 1);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.copyright{
+    padding-top: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+

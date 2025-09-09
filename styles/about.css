@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    height: 6.5rem;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin-top: -8px;
+}
+
+.miima-about-logo{
+    width: 10rem;
+}
+
+.head-mid-about{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.head-mid-about a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+}
+
+.button-quote{
+    border: none;
+    background-color: rgba(245, 8, 8, 0.75);
+    font-size: 15px;
+    padding: 15px;
+    transform: translateY(-13px);
+    border-radius: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section1{
+    text-align: center;
+    padding-inline: 10%;
+    background-image: url(../assets/services-4th-top1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    padding-top: 8rem;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    h3{
+        font-size: 35px;
+        backdrop-filter: blur(1px);
+    }
+    p{
+        font-size: 25px;
+        backdrop-filter: blur(1px);
+    }
+}
+
+.quoteBtn{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 15rem;
+    margin-top: 60px;
+    h3{
+        font-size: 25px;
+    }
+    p, a{
+        font-size: 20px;
+        background-color: rgba(180, 180, 180, 1);
+        padding: 5px;
+        border-radius: 5px;
+        align-items: center;
+    }
+}
+
+.section2-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.section2-col1 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+}
+
+.section3{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10%;
+    margin-top: 5rem;
+    gap: 20px;
+}
+
+.cont3-rev1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(53, 117, 236, 1);
+    padding: 20px;
+    border-radius: 10px;
+    p{
+        font-size: 18px;
+    }
+}
+
+.cont3-rev2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(53, 117, 236, 1);
+    padding: 20px;
+    border-radius: 10px;
+    p{
+        font-size: 18px;
+    }
+}
+
+footer{
+    background-color: rgb(25, 25, 71);
+    padding-inline: 30px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.col-foot{
+    display: flex;
+    flex-direction: row;
+}
+
+.stcol-foot h4{
+    white-space: normal;
+    width: 50%;
+}
+
+.ndcol-foot{
+    padding-top: 25px;
+}
+
+.ndcol-foot-i{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-foot{
+    width: 30%;
+}
+
+.rdcol-foot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.rdcol-foot input{
+    height: 20px;
+    width: 20rem;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.rdcol-foot button{
+    border: none;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 2.5rem;
+    background-color: rgba(53, 117, 236, 1);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.copyright{
+    padding-top: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

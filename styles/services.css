@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    height: 6rem;
+    padding-top: 15px;
+}
+
+.miima-services-logo{
+    width: 10rem;
+}
+
+.head-mid-services{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 50px;
+    a{
+        font-size: 22px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+    }
+    button{
+        padding: 20px;
+        border: none;
+        background-color: rgba(226, 17, 17, 0.75);
+        color: rgba(255, 255, 255, 1);
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 25px;
+        transform: translateY(-16px);
+    }
+}
+
+.section1{
+    /*transform: translateY(6rem);*/
+    background-color: rgba(159, 233, 243, 0.329);
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intro-sect1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 20px;
+        transform: translateY(-30px);
+        white-space: normal;
+        width: 55%;
+        text-align: center;
+    }
+}
+
+.img-sect1{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 4%;
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+        transform: translateY(-18px);
+        white-space: normal;
+        width: 85%;
+    }
+}
+
+.sect1-img{
+    border-radius: 20px;
+}
+
+.section2{
+    margin-inline: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.intro-p{
+    font-size: 20px;
+    transform: translateY(-15px);
+}
+
+.sect2-row1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 17px;
+        transform: translateY(-15px);
+        white-space: normal;
+        width: 90%;
+    }
+}
+
+.sect2-row1-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+    button{
+        border: 1px solid rgba(0, 0, 0, 1);
+        background-color: transparent;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        width: 8em;
+        cursor: pointer;
+    }
+}
+
+.sect2-row2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 17px;
+        transform: translateY(-15px);
+        white-space: normal;
+        width: 90%;
+    }
+}
+
+.sect2-row2-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+    button{
+        border: 1px solid rgba(0, 0, 0, 1);
+        background-color: transparent;
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 30px;
+        width: 8em;
+        cursor: pointer;
+    }
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10%;
+    img{
+        border-radius: 15px;
+    }
+}
+
+.sect3-gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 13px;
+    width: 100%;
+}
+
+.st-img{
+    grid-column: 1/-1;
+}
+
+footer{
+    background-color: rgb(25, 25, 71);
+    padding-inline: 30px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.col-foot{
+    display: flex;
+    flex-direction: row;
+}
+
+.stcol-foot h4{
+    white-space: normal;
+    width: 50%;
+}
+
+.ndcol-foot{
+    padding-top: 25px;
+}
+
+.ndcol-foot-i{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-foot{
+    width: 30%;
+}
+
+.rdcol-foot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.rdcol-foot input{
+    height: 20px;
+    width: 20rem;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.rdcol-foot button{
+    border: none;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 2.5rem;
+    background-color: rgba(53, 117, 236, 1);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.copyright{
+    padding-top: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

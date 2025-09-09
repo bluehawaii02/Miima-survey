@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+
+.miima-logo{
+    width: 10rem;
+}
+
+.head-mid{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 50px;
+    margin-top: 15px;
+}
+
+.head-mid a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+}
+
+.services-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateY(-10px);
+}
+
+.head-mid button{
+    border: none;
+    background-color: rgba(214, 21, 21, 0.795);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-inline: 10px;
+    padding: 15px;
+    transform: translateY(-10px);
+}
+
+.head-mid i{
+    display: none;
+}
+
+.button-quote.special{
+    align-self: center;
+}
+
+.cont1{
+    width: 100%;
+    position: relative;
+    height: 530px;
+}
+
+.cont1-content{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(40, 40, 40, .7);
+    width: 100%;
+    height: 500px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.cont1-content h1{
+    font-size: 50px;
+    white-space: normal;
+    width: 50%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cont1-content p{
+    font-size: 20px;
+}
+
+.cont1-content button{
+    background-color: rgba(80, 80, 80, .01);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    width: 13rem;
+    height: 40px;
+    cursor: pointer;;
+}
+
+.miima-vid{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.cont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-inline: 20px;
+    gap: 20px;
+}
+
+.cont2 h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.cont2-content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cont2-col{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(150, 150, 150, .3);
+    padding-inline: 30px;
+    border-radius: 10px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: -10px;
+}
+
+.col-p1{
+    font-size: 25px;
+}
+
+.col-p2{
+    font-size: 20px;
+    white-space: normal;
+    text-align: center;
+}
+
+.cont3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    margin: 20px;
+}
+
+.cont3-heading{
+    text-align: center;
+    font-size: 30px;
+}
+
+.cont3-revs{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.cont3-rev1, .cont3-rev2{
+    width: 35%;
+    white-space: normal;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.rev-name{
+    text-align: center;
+}
+
+.text-rev1 p:nth-of-type(1){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.text-rev2 p:nth-of-type(1){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+footer{
+    background-color: rgb(25, 25, 71);
+    padding-inline: 30px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.col-foot{
+    display: flex;
+    flex-direction: row;
+}
+
+.stcol-foot h4{
+    white-space: normal;
+    width: 50%;
+}
+
+.ndcol-foot{
+    padding-top: 25px;
+}
+
+.ndcol-foot-i{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo-foot{
+    width: 30%;
+}
+
+.rdcol-foot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.rdcol-foot input{
+    height: 20px;
+    width: 20rem;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.rdcol-foot button{
+    border: none;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 2.5rem;
+    background-color: rgba(53, 117, 236, 1);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+}
+
+.copyright{
+    padding-top: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width:980px){
+    .head-mid{
+        gap: 15px;
+        padding-right: 10px;
+    }
+    .cont1-content h1{
+        width: 60%;
+        font-size: 40px;
+    }
+    .cont2-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col-p1{
+        text-align: center;
+    }
+    .cont3-revs{
+        gap: 15px;
+    }
+    .cont3-rev1, .cont3-rev2{
+        width: 55%;
+    }
+}
+
+@media (max-width:900px){
+    .rdcol-foot input{
+        width: 15rem;
+    }
+}
+
+@media (max-width:780px){
+    .head-mid a{
+        display: none;
+    }
+    .head-mid i{
+        display: block;
+        align-self: center;
+        font-size: 35px;
+        transform: translateY(-10px);
+    }
+    .cont1-content h1{
+        width: 70%;
+        font-size: 35px;
+        p{
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 680px){
+    .col-foot{
+        padding-inline: 0;
+        margin-inline: 0;
+        gap: 20px;
+    }
+    .stcol-foot{
+        h4{
+            white-space: nowrap;
+        }
+        p{
+            display: none;
+        }
+    }
+    .cont2-col{
+        padding-inline: 10px;
+    }
+    .col-p1{
+        font-size: 20px;
+    }
+    .col-p2{
+        font-size: 16px;
+        transform: translateY(-10px);
+    }
+    .text-rev1 p:nth-of-type(1){
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    .text-rev2 p:nth-of-type(1){
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+}
+
