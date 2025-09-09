@@ -53,8 +53,22 @@ header{
     transform: translateY(-10px);
 }
 
+.dropdown{
+    position: relative;
+}
+
+.head-mid-dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
 .head-mid i{
     display: none;
+    margin-top: 6px;
 }
 
 .button-quote.special{
@@ -220,6 +234,10 @@ footer{
     padding-top: 25px;
 }
 
+.ndcol-foot-c{
+    display: none;
+}
+
 .ndcol-foot-i{
     display: flex;
     flex-direction: row;
@@ -240,19 +258,20 @@ footer{
 
 .rdcol-foot input{
     height: 20px;
-    width: 20rem;
+    width: 100%;
     border-radius: 15px;
     outline: none;
     padding: 15px;
     font-size: 15px;
+    display: flex;
 }
 
 .rdcol-foot button{
     border: none;
-    width: 60%;
+    width: 70%;
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 2.5rem;
+    height: fit-content;
     background-color: rgba(53, 117, 236, 1);
     font-size: 15px;
     color: rgba(255, 255, 255, 1);
@@ -317,6 +336,9 @@ footer{
 }
 
 @media (max-width: 680px){
+    footer{
+        padding-inline: 5px;
+    }
     .col-foot{
         padding-inline: 0;
         margin-inline: 0;
@@ -332,6 +354,10 @@ footer{
     }
     .cont2-col{
         padding-inline: 10px;
+    }
+    .cont2-content{
+        display: flex;
+        flex-direction: column;
     }
     .col-p1{
         font-size: 20px;
@@ -349,6 +375,44 @@ footer{
         font-size: 18px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
+    }
+    .ndcol-foot-c{
+        display: block;
+        p{
+            display: block;
+        }
+    }
+    .ndcol-foot{
+        display: none;
+    }
+}
+
+@media (max-width:635px){
+    .col-foot{
+        display: flex;
+        flex-direction: column;
+        button{
+            width: 10rem;
+        }
+    }
+    footer{
+        padding-inline: 30%;
+    }
+    .stcol-foot h4{
+        white-space: normal;
+        width: 90%;
+    }
+    .cont3-revs{
+        display: flex;
+        flex-direction: column;
+        margin-inline: 15%;
+        align-items: center;
+        width: 80%;
+    }
+    .cont1-content p{
+        white-space: normal;
+        width: 85%;
+        text-align: center;
     }
 }
 
