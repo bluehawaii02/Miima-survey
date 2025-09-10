@@ -23,15 +23,61 @@ header{
 .head-mid{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    padding-right: 50px;
     margin-top: 15px;
 }
 
-.head-mid a{
+.head-mid-st{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: rgba(13, 30, 73, 1);
+    margin-right: 20px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+}
+
+.head-mid-nd{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    background-color: rgba(200, 200, 200, .6);
+    border-radius: 5px;
+    width: 8rem;
+    padding: 10px;
+    gap: 13px;
+    z-index: 1000;
+    a{
+        color: rgba(13, 30, 73, 1);
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    a:hover{
+        background-color: rgba(200, 200, 200, .95);
+        border-radius: 5px;
+    }
+}
+
+.button-quote-drop{
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 18px;
+    align-items: center;
+    background-color: rgba(214, 21, 21, 0.795);
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.head-mid-st a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-    font-size: 22px;
+    color: rgba(13, 30, 73, 1);
+    font-size: 25px;
 }
 
 .services-header{
@@ -41,7 +87,7 @@ header{
     transform: translateY(-10px);
 }
 
-.head-mid button{
+.button-quote{
     border: none;
     background-color: rgba(214, 21, 21, 0.795);
     color: rgba(255, 255, 255, 1);
@@ -53,22 +99,17 @@ header{
     transform: translateY(-10px);
 }
 
-.dropdown{
+/*.menu-icon{
     position: relative;
-}
-
-.head-mid-dropdown{
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: 1000;
-    background-color: white;
-}
+}*/
 
 .head-mid i{
     display: none;
     margin-top: 6px;
+    position: relative;
+    font-size: 3rem;
+    color: rgba(13, 30, 73, 1);
+    transform: translateY(-8px);
 }
 
 .button-quote.special{
@@ -108,14 +149,15 @@ header{
 }
 
 .cont1-content button{
-    background-color: rgba(80, 80, 80, .01);
+    background-color: rgba(13, 30, 73, 1);
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 30px;
     width: 13rem;
     height: 40px;
-    cursor: pointer;;
+    cursor: pointer;
+    border: none;
 }
 
 .miima-vid{
@@ -317,14 +359,15 @@ footer{
 }
 
 @media (max-width:780px){
-    .head-mid a{
+    .head-mid-st{
         display: none;
     }
     .head-mid i{
         display: block;
-        align-self: center;
+        position: relative;
+        /*align-self: center;
         font-size: 35px;
-        transform: translateY(-10px);
+        transform: translateY(-10px);*/
     }
     .cont1-content h1{
         width: 70%;
