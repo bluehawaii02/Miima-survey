@@ -1,0 +1,85 @@
+const API = "https://121559faa5fe.ngrok-free.app";
+
+const reviewStars = Array.from(document.querySelectorAll('.star-reviews .review'));
+let currentRating = 0;
+
+reviewStars.forEach((star, index) => {
+  star.addEventListener('click', () => {
+    currentRating = index + 1; // 1..5
+    reviewStars.forEach((s, i) => {
+      if (i < currentRating) {
+        s.classList.add('bxs-star');
+        s.classList.remove('bx-star');
+      } else {
+        s.classList.add('bx-star');
+        s.classList.remove('bxs-star');
+      }
+    });
+  });
+});
+
+// inputs
+const msgEl = document.getElementById('review-arear');
+const nameEl = document.getElementById('name-review');
+const hpEl   = document.getElementById('reviewHp'); // hidden honeypot
+const btn    = document.getElementById('aboutRevBtn');
+const statusEl = document.getElementById('reviewStatus');
+
+function setStatus(text, type='info') {
+  statusEl.textContent = text;
+  statusEl.className = type === 'error' ? 'status error'
+                    : type === 'success' ? 'status success'
+                    : 'status';
+}
+
+function validate() {
+  if (!currentRating) return 'Please select a star rating.';
+  if (!nameEl.value.trim()) return 'Please enter your name.';
+  if (msgEl.value.trim().length < 10) return 'Message must be at least 10 characters.';
+  if (hpEl && hpEl.value) return 'Spam detected.';
+  return null;
+}
+
+async function submitReview() {
+  const err = validate();
+  if (err) { setStatus(err, 'error'); return; }
+
+  const payload = {
+    name: nameEl.value.trim(),
+    rating: currentRating,
+    message: msgEl.value.trim(),
+    hp: hpEl?.value || ''
+  };
+
+  btn.disabled = true;
+  const prev = btn.textContent;
+  btn.textContent = 'Sending...';
+  setStatus('Sending...', 'info');
+
+  try {
+    const res = await fetch(`${API}/api/reviews`, {
+      method: 'POST',
+      headers: { 'Content-Type':'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const out = await res.json().catch(()=>({ ok:false, message:'Invalid server response' }));
+
+    if (!res.ok || !out.ok) {
+      setStatus(out.message || 'Could not submit your review. Please try again.', 'error');
+    } else {
+      setStatus(out.message || 'Thank you! Your review was received.', 'success');
+      // reset form
+      currentRating = 0;
+      reviewStars.forEach(s => { s.classList.add('bx-star'); s.classList.remove('bxs-star'); });
+      msgEl.value = '';
+      nameEl.value = '';
+    }
+  } catch (e) {
+    setStatus('Network error. Please check your connection.', 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = prev;
+  }
+}
+
+btn.addEventListener('click', submitReview);

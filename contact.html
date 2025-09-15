@@ -17,7 +17,16 @@
             <a href="about.html">ABOUT</a>
             <a href="services.html">SERVICES</a>
             <a href="contact.html">CONTACT</a>
-            <button class="button-quote">INSTANT INQUIRY</button>
+        </div>
+        <div class="dropdown">
+            <i class='bxr  bx-menu'  ></i> 
+            <div class="head-mid-nd">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="contact.html">CONTACT</a>
+                <button class="button-quote-drop">QUOTE</button>
+            </div>
         </div>
     </header>
 
@@ -33,15 +42,20 @@
                     <input type="text" class="name" id="name" name="name" placeholder="your name..." required>
                 </div>
                 <div class="email-div">
-                    <label for="email">Your Email:</label>
-                    <input type="email" class="email" id="email" name="email" placeholder="your email..." required>
+                    <label for="email1">Your Email:</label>
+                    <input type="email" class="email1" id="email1" name="email1" placeholder="your email..." required>
                 </div>
                 <div class="message-div">
                     <label for="message">Your message:</label>
                     <textarea name="message" id="message" class="message" placeholder="type your meesage here..." required></textarea>
                 </div>
-                <button>SUBMIT</button>
+                <input type="text" id="hp" name="hp" style="display:none" tabindex="-1" autocomplete="off">
+                
+                <button id="contactSubmitBtn" type="button">SUBMIT</button>
+                <div id="contactStatus" class="status" aria-live="polite"></div>
+
             </div>
+
             <img class="attract-img" src="assets/contact-1st.jpg" alt="Miima">
             
         </div>
@@ -97,6 +111,17 @@
                 <P>EXCELLENCE</P>
                 <P>INTEGRITY</P>
                 <P>EXPERIENCE</P>
+                <div class="ndcol-foot-c">
+                    <img class="logo-foot"src="assets/logo1-noback.png" alt="MIIMA">
+                    <p>+1-2014567411</p>
+                    <p>info@msurveyingeomatics.com</p>
+                    <div class="ndcol-foot-i">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                </div>
             </div>
 
             <div class="ndcol-foot">
@@ -121,5 +146,6 @@
             <p>&copy;All Rights Reserved | 2025</p>
         </div>
     </footer>
+    <script src="contact.js"></script>
 </body>
 </html>

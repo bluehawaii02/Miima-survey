@@ -29,7 +29,7 @@ header{
 .head-mid-st{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     color: rgba(13, 30, 73, 1);
     margin-right: 20px;
 }
@@ -42,14 +42,15 @@ header{
 .head-mid-nd{
     display: none;
     position: absolute;
-    top: 30px;
-    right: 15px;
+    margin-top: 45px;
+    right: 1.5px;
     background-color: rgba(200, 200, 200, .6);
     border-radius: 5px;
-    width: 8rem;
+    width: 9rem;
     padding: 10px;
     gap: 13px;
     z-index: 1000;
+    backdrop-filter: blur(20px);
     a{
         color: rgba(13, 30, 73, 1);
         text-decoration: none;
@@ -57,7 +58,7 @@ header{
         font-weight: bold;
     }
     a:hover{
-        background-color: rgba(200, 200, 200, .95);
+        background-color: rgba(250, 250, 250, .95);
         border-radius: 5px;
     }
 }
@@ -78,14 +79,15 @@ header{
     text-decoration: none;
     color: rgba(13, 30, 73, 1);
     font-size: 25px;
+    font-weight: bold;
 }
 
-.services-header{
+/*.services-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     transform: translateY(-10px);
-}
+}*/
 
 .button-quote{
     border: none;
@@ -110,6 +112,8 @@ header{
     font-size: 3rem;
     color: rgba(13, 30, 73, 1);
     transform: translateY(-8px);
+    background-color: rgba(13, 30, 73, .2);
+    border-radius: 5px;
 }
 
 .button-quote.special{
@@ -186,29 +190,38 @@ header{
 .cont2-content{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    margin-inline: 5%;
+    gap: 5%;
 }
 
 .cont2-col{
     display: flex;
     flex-direction: column;
     background-color: rgba(150, 150, 150, .3);
-    padding-inline: 30px;
     border-radius: 10px;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    gap: -10px;
+    width: 35%;
+    height: 25rem;
+    img{
+        width: 100%;
+        height: 55%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
 }
 
 .col-p1{
     font-size: 25px;
+    font-weight: bold;
 }
 
 .col-p2{
-    font-size: 20px;
+    padding-inline: 0;
+    font-size: 18px;
     white-space: normal;
     text-align: center;
+    width: 98%;
+    transform: translateY(-20px);
 }
 
 .cont3{
@@ -296,6 +309,7 @@ footer{
     gap: 10px;
     padding-top: 20px;
     font-size: 20px;
+    margin-right: 10px;
 }
 
 .rdcol-foot input{
@@ -326,6 +340,19 @@ footer{
     margin-bottom: 0;
 }
 
+@media (max-width: 1130px){
+    .cont2-content{
+        margin-inline: 0;
+        padding-inline: 0;
+        .cont2-col{
+            width: 40%;
+            img{
+                height: 50%;
+            }
+        }
+    }
+}
+
 @media (max-width:980px){
     .head-mid{
         gap: 15px;
@@ -352,6 +379,18 @@ footer{
     }
 }
 
+@media (max-width: 930px){
+    .cont2-content{
+        padding-inline: 5px;
+        gap: 10px;
+        .cont2-col{
+            img{
+                height: 50%;
+            }
+        }
+    }
+}
+
 @media (max-width:900px){
     .rdcol-foot input{
         width: 15rem;
@@ -369,12 +408,21 @@ footer{
         font-size: 35px;
         transform: translateY(-10px);*/
     }
+    .head-mid-nd{
+        display: none;
+    }
     .cont1-content h1{
         width: 70%;
         font-size: 35px;
         p{
             font-size: 15px;
         }
+    }
+}
+
+@media (max-width: 860px){
+    .col-p1{
+        font-size: 20px;
     }
 }
 
@@ -395,12 +443,13 @@ footer{
             display: none;
         }
     }
-    .cont2-col{
-        padding-inline: 10px;
-    }
+    
     .cont2-content{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        .cont2-col{
+            width: 90%;
+        }
     }
     .col-p1{
         font-size: 20px;
@@ -456,6 +505,33 @@ footer{
         white-space: normal;
         width: 85%;
         text-align: center;
+    }
+}
+@media (max-width: 500px){
+    .cont2-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cont2-col{
+            img{
+                height: 60%;
+            }
+        }
+    }
+    .text-rev1{
+        p:nth-of-type(1){
+            white-space: normal;
+            width: 300px;
+            text-align: center;
+            transform: translateX(-4rem);
+        }
+    }
+    .text-rev2{
+        p:nth-of-type(1){
+            white-space: normal;
+            width: 300px;
+            transform: translateX(-4rem);
+        }
     }
 }
 
