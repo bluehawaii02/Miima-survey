@@ -341,6 +341,12 @@ footer{
 }
 
 @media (max-width: 1130px){
+    .cont1-content{
+        h1{
+            white-space: normal;
+            width: 80%;
+        }
+    }
     .cont2-content{
         margin-inline: 0;
         padding-inline: 0;
@@ -421,6 +427,12 @@ footer{
 }
 
 @media (max-width: 860px){
+    .cont1-content{
+        h1{
+            white-space: normal;
+            width: 80%;
+        }
+    }
     .col-p1{
         font-size: 20px;
     }
@@ -432,13 +444,13 @@ footer{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: 4rem;
+        height: 5.5rem;
         padding-top: 0;
         padding-bottom: 0;
         position: fixed;
         .miima-logo{
-            width: 4.5rem;
-            height: 4rem;
+            width: 5.5rem;
+            height: 5rem;
             margin-left: 10px;
         }
         .head-mid-st{
@@ -616,10 +628,11 @@ footer{
     }
     .cont1{
         .miima-vid{
-            height: 23rem;
+            height: 26rem;
         }
         .cont1-content{
-            height: 21.75rem;
+            height: 24rem;
+            padding-top: 33px;
         }
     }
     .get-started{
@@ -707,18 +720,35 @@ footer{
             white-space: normal;
             width: 90%;
             font-size: 25px;
+            text-align: center;
         }
         p{
             white-space: normal;
-            width: 85%;
+            width: 90%;
             font-size: 15px;
-            text-align: center;
+            text-align: left;
         }
     }
 
     .rev-rev{
         white-space: normal;
         width: 150%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        overflow-x: hidden;
+        .stcol-foot{
+            h4{
+                white-space: normal;
+                width: 100%;
+            }
+        }
     }
 
     .rdcol-foot{
