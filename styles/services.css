@@ -50,11 +50,11 @@ header{
         font-size: 25px;
         position: absolute;
         transform: translateX(-7rem);
-        background-color: rgba(97, 103, 104, 0.342);
+        background-color: rgba(97, 103, 104, 0.7);
         padding: 15px;
         border-radius: 10px;
         backdrop-filter: blur(5px);
-        margin-top: 3rem;
+        margin-top: -5px;
         a{
             text-decoration: none;
             color: rgba(13, 30, 73, 1);
@@ -516,6 +516,18 @@ footer{
         p{
             white-space: normal;
             width: 80%;
+        }
+    }
+    header{
+        height: 4rem;
+        .miima-services-logo{
+            height: 5rem;
+        }
+        .head-mid-services{
+            display: none;
+        }
+        .dropdown{
+            display: block;
         }
     }
 }
