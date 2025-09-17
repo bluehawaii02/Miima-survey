@@ -84,3 +84,16 @@
     }
   });
 })();
+
+//let's make dropdown menu button interactive when clicked :) 
+const menu = document.querySelector(".bx-menu");
+const dropdown = document.querySelector(".head-mid-nd");
+
+
+menu.addEventListener("click", () => {
+  if(dropdown.style.display === "none"){
+    dropdown.style.display = "flex";
+  }else{
+    dropdown.style.display ="none";
+  }
+})

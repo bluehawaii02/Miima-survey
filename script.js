@@ -1,9 +1,6 @@
 const dropdown = document.querySelector(".bx-menu");
 const dropdownContent = document.querySelector(".head-mid-nd");
 const dropdownLost = document.querySelector(".head-mid-st");
-const getQuote = document.querySelector(".button-quote");
-const getQuote2 = document.querySelector(".get-started");
-const getQuote3 = document.querySelector(".quoteBtn");
 //const reviewStars = document.querySelectorAll(".review");
 const reviewMsg = document.querySelector(".review-arear");
 const nameReview = document.querySelector(".name-review");
@@ -23,17 +20,6 @@ if(dropdown && dropdownContent && dropdownLost){
   console.log("var not found");
 };
 
-if(getQuote && getQuote2){
-  getQuote.addEventListener("click", () => {
-    window.location = "quote.html";
-  });
-
-  getQuote2.addEventListener("click", () => {
-    window.location = "quote.html";
-  });
-}else{
-  console.log("second var not found");
-};
 
 if(dropdown && dropdownContent){
   dropdown.addEventListener("click", () => {
@@ -44,14 +30,6 @@ if(dropdown && dropdownContent){
   };
 })}else{
   console.log("third var not found")
-};
-
-if(getQuote3){
-  getQuote3.addEventListener("click", () => {
-    window.location = "quote.html";
-  });
-}else{
-  console.log("fourth var not found")
 };
 
 /*if(reviewStars){
@@ -113,3 +91,4 @@ if(nameReview){
   if(reviewMsg.value = "";
   nameReview.value = "";
 })*/
+

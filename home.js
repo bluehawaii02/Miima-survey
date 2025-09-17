@@ -10,10 +10,9 @@ button.addEventListener("click", () => {
     };
 });
 
-if(content.style.display ==="flex"){
-    window.addEventListener("click", () => {
-        content.style.display = "none";
-    })
-}else{
-    console.log("you're stupid")
-};
+const fillQuoteBtn = document.querySelector(".get-started");
+
+fillQuoteBtn.addEventListener("click", () => {
+  window.location.href = "getQuote.html";
+  document.style.backgroundColor = "red";
+});

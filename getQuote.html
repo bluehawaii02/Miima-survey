@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/getQuote.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.avif" alt="MIIMA" class="miima-contact-logo">
+        </a>
+        <div class="head-mid-contact">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="dropdown">
+            <i class='bxr  bx-menu'  ></i> 
+            <div class="head-mid-nd">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="b-form">
+            <h3>Thank you for considering our surveying services.</h3>
+            <p>fill the form below to get a quote!</p>
+        </div>
+
+        <div class="parent-form">
+            <form action="submit">
+                <div class="st-form">
+                    <div class="name-div">
+                        <label for="name">NAME:</label>
+                        <input type="text" name="name" class="name" id="name" required>
+                    </div>
+                    <div class="company-div">
+                        <label for="company">ORGANIZATION:</label>
+                        <input type="text" name="company" class="company" id="company" placeholder="optional">
+                    </div>
+                </div>
+
+                <div class="nd-form">
+                    <div class="nd-firstRow">
+                        <div class="city-div">
+                            <label for="city">CITY:</label>
+                            <input type="text" name="city" class="city" id="city" required>
+                        </div>
+                        <div class="street-div">
+                            <label for="street">STREET:</label>
+                            <input type="text" name="city" class="city" id="city" required>
+                        </div>
+                    </div>
+                    <div class="nd-seccondRow">
+                        <div class="zip-div">
+                            <label for="zip">ZIP CODE</label>
+                            <input type="text" name="zip" class="zip" id="zip" required>
+                        </div>
+                        <div class="state-div">
+                            <label for="state">STATE</label>
+                            <input type="text" class="state" name="state" id="state" value="New Jersey">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rd-form">
+                    <div class="phone-div">
+                        <label for="phone">Phone:</label>
+                        <input type="tell" name="phone" class="phone" id="phone" required>
+                    </div>
+                    <div class="email-div">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="rth-form">
+                    <div class="rth-form-row1">
+                        <label for="survey-service">Type of service:
+                            <select name="survey-service" id="survey-service" class="survey-service">
+                                <option value="Topographic survey">Topographic survey</option>
+                                <option value="Built-survey">As-Built survey & verification</option>
+                                <option value="control-networks">Control Networks</option>
+                                <option value="construction-staking">Construction staking & Establishment</option>
+                                <option value="monitoring">Monitoring & deformation survey</option>
+                            </select>
+                        </label>
+
+                        <label for="other-option">
+                            other
+                            <input type="text" class="other-txt" placeholder="type of survey">
+                        </label>
+                    </div>
+
+                    <div class="rth-form-row2">
+                        <label for="location">
+                            Project location
+                            <input type="text" class="location" id="location">
+                        </label>
+                        
+                        <label for="start-date">
+                            Desired start date
+                            <input type="date">
+                        </label>
+                    </div>
+
+                    <div class="rth-form-row3">
+                        <label for="additional-info">
+                            Project description
+                            <textarea name="additional-info" id="additional-info"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            <div class="on-side">
+                <img src="assets/quote-bg.jpg" alt="miima project">
+                <img src="assets/quote1.webp" alt="miima projects">
+                <img src="assets/quote2.jpg" alt="miima projects">
+                <img src="assets/quote4.webp" alt="miima projects">
+            </div>
+        </div>
+
+        <div class="modal">
+            <b>Thank you for reaching out!</b>
+            <p>We’ve received your request and our team will review your details. One of our survey experts will get back to you shortly with your personalized quote.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="col-foot">
+            <div class="stcol-foot">
+                <h4>MIIMA SURVEYING AND GEOMATICS LLC</h4>
+                <P>EXCELLENCE</P>
+                <P>INTEGRITY</P>
+                <P>EXPERIENCE</P>
+                <div class="ndcol-foot-c">
+                    <img class="logo-foot"src="assets/logo1-noback.png" alt="MIIMA">
+                    <p>+1-2014567411</p>
+                    <p>info@msurveyingeomatics.com</p>
+                    <div class="ndcol-foot-i">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ndcol-foot">
+                <img class="logo-foot" src="assets/logo1-noback.png" alt="MIIMA">
+                <p>+1-2014567411</p>
+                <p>info@msurveyingeomatics.com</p>
+                <div class="ndcol-foot-i">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-tiktok"></i>
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+            </div>
+
+            <div class="rdcol-foot">
+                <label for="email">Enter your email address:</label>
+                <input type="email" id="email" name="email" placeholder="your email for contact">
+                <button>submit your inquiry</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;All Rights Reserved | 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

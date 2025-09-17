@@ -399,10 +399,10 @@ footer{
 
 @media (max-width:780px){
     .head-mid-st{
-        display: none;
+        display: flex;
     }
     .head-mid i{
-        display: block;
+        display: none;
         position: relative;
         /*align-self: center;
         font-size: 35px;
@@ -427,6 +427,68 @@ footer{
 }
 
 @media (max-width: 680px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: fixed;
+        .miima-logo{
+            width: 4.5rem;
+            height: 4rem;
+            margin-left: 10px;
+        }
+        .head-mid-st{
+            margin-right: 0;
+            padding-right: 0;
+            transform: translateY(-5px);
+            a{
+                font-size: 20px;
+            }
+        }
+        .dropdown{
+            i{
+            font-size: 2rem;
+            font-weight: normal;
+            }
+        }
+    }
+
+    main{
+        .miima-vid{
+            height: 26.25rem;
+        }
+        .cont1-content{
+            padding-top: 20px;
+            height: 25rem;
+            h1{
+                white-space: normal;
+                width: 95%;
+            }
+            p{
+                white-space: normal;
+                width: 80%;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        .cont2{
+            margin-top: 0;
+            padding-top: 0;
+            .cont2-heading{
+                margin-top: 0;
+                padding-top: 0;
+                h3{
+                    margin-top: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    
     footer{
         padding-inline: 5px;
     }
@@ -531,6 +593,137 @@ footer{
             white-space: normal;
             width: 300px;
             transform: translateX(-4rem);
+        }
+    }
+}
+
+@media (max-width: 580px){
+    .head-mid-st{
+        margin-right: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        a{
+            display: flex;
+            flex-direction: row;
+            font-size: 10px;
+        }
+    }
+    .head-mid-nd{
+        margin-top: 30px;
+        width: 7rem;
+    }
+    .cont1{
+        .miima-vid{
+            height: 23rem;
+        }
+        .cont1-content{
+            height: 21.75rem;
+        }
+    }
+    .get-started{
+        margin-top: 0;
+        padding-top: 0;
+        transform: translateY(-20px);
+    }
+    .cont2{
+        margin: 0;
+        padding: 0;
+        transform: translateY(-70px);
+    }
+    .cont3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-inline: 0;
+        padding-inline: 0;
+        margin-top: 0;
+        padding-top: 0;
+        transform: translateY(-20px);
+        h5{
+            white-space: normal;
+            width: 90%;
+        }
+    }
+    .cont3-revs{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0;
+        margin-inline: 0;
+        div{
+            margin-inline: 0;
+            padding-inline: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .stars{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+    .cont3-rev1{
+        .text-rev1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            p:nth-of-type(1){
+                transform: translateX(-10px);
+            }
+        }
+    }
+    .cont3-rev2{
+        .text-rev2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            p:nth-of-type(1){
+                transform: translateX(-10px);
+            }
+        }
+    }
+}
+
+@media (max-width: 530px){
+    .head-mid-st{
+        display: none;
+    }
+    .dropdown{
+        .bxr{
+            display: block;
+        }
+    }
+    .cont1-content{
+        h1{
+            white-space: normal;
+            width: 90%;
+            font-size: 25px;
+        }
+        p{
+            white-space: normal;
+            width: 85%;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    .rev-rev{
+        white-space: normal;
+        width: 150%;
+    }
+
+    .rdcol-foot{
+        input{
+            width: 10rem;
         }
     }
 }
