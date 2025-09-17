@@ -384,7 +384,7 @@ footer{
             width: 45%;
         }
     }
-     .sect2-row2{
+    .sect2-row2{
         margin-inline: 5%;
         .sect1-img{
             width: 45%;
@@ -420,13 +420,26 @@ footer{
             width: 13rem;
         }
     }
-    .head-mid-services{
+    /*.head-mid-services{
         display: none;
     }
     .dropdown{
         display: flex;
         .head-mid-nd{
             display: none;
+        }
+    }*/
+}
+
+@media (max-width: 730px){
+    header{
+        height: 5rem;
+        .miima-services-logo{
+            width: 7rem;
+        }
+        .head-mid-services{
+            margin-right: 10px;
+            padding-right: 10px;
         }
     }
 }
@@ -471,6 +484,30 @@ footer{
     }
 }
 
+@media (max-width: 630px){
+    header{
+        .head-mid-services{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+    .section1{
+        padding-top: 100px;
+        .intro-sect1{
+            padding-top: 20px;
+            h3{
+                font-size: 40px;
+            }
+            p{
+                white-space: normal;
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media (max-width: 600px){
     .intro-sect1{
         h3{
@@ -492,6 +529,15 @@ footer{
             }
         }
     }
+    .section3{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 560px){
+    .section3{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 520px){
@@ -508,12 +554,71 @@ footer{
             width: 90%;
         }
     }
+    .section2{
+        h3{
+            font-size: 35px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .section2{
+        .sect2-row1-col2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p{
+                    transform: translateY(-30px);
+                    text-align: center;
+                }
+            }
+            button{
+                transform: translateY(-90px);
+                width: 15rem;
+                border-radius: 15px;
+            }
+        }
+    }
+    .sect2-row2-col2{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            p{
+                transform: translateY(-40px);
+                white-space: normal;
+                width: 90%;
+                text-align: center;
+            }
+        }
+        button{
+            transform: translateY(-80px);
+        }
+    }
+    
 }
 
 @media (max-width: 420px){
-    .img-sect1{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        color: red;
+    .section1{
+        padding-top: 90px;
+        .img-sect1{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            div{
+                width: 90%;
+            }
+        }
     }
 }

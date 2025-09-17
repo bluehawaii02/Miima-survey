@@ -610,6 +610,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
         .cont2-col{
             img{
                 height: 60%;
