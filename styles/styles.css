@@ -197,7 +197,7 @@ header{
 .cont2-col{
     display: flex;
     flex-direction: column;
-    background-color: rgba(150, 150, 150, .3);
+    background-color: rgba(13, 30, 73, .5);
     border-radius: 10px;
     align-items: center;
     width: 35%;
