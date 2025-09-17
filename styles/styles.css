@@ -518,6 +518,9 @@ footer{
             display: none;
         }
     }
+    .rdcol-foot{
+        display: none;
+    }
     
     .cont2-content{
         display: grid;
