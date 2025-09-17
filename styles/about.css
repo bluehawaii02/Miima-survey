@@ -660,6 +660,17 @@ footer{
     .head-mid-st-about{
         display: none;
     }
+    .section2{
+        margin-top: 30px;
+        .sect-section1{
+            margin-top: 0;
+            transform: translateY(-30px);
+            .section2-col1{
+                padding-top: 0;
+                transform: translateY(-40px);
+            }
+        }
+    }
     .dropdown{
         display: flex;
     }
