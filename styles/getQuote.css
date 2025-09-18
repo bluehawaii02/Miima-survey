@@ -79,6 +79,10 @@ main{
         flex-direction: row;
         justify-content: space-between;
         margin-top: 70px;
+        .form-par{
+            color: rgba(7, 2, 48, 1);
+            margin-left: 10px;
+        }
         form{
             width: 50%;
             display: flex;
@@ -231,7 +235,7 @@ main{
                     }
                 }
             }
-            button{
+            .submit{
                 width: 30%;
                 height: 40px;
                 border: none;
@@ -242,6 +246,23 @@ main{
             }
             
         }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .p-payment{
+                background-color: rgba(9, 10, 92, 0.863);
+                width: 13rem;
+                color: rgba(255, 255, 255, 1);
+                border: none;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+        }
+        .some-info{
+            color: rgb(3, 4, 37);
+            font-size: 20px;
+        }
         .on-side{
             width: 35%;
             display: flex;
@@ -250,6 +271,9 @@ main{
             img{
                 width: 100%;
                 border-radius: 20px;
+            }
+            img:nth-last-of-type(1){
+                display: none;
             }
         }
     }
@@ -354,9 +378,240 @@ footer{
 }
 
 @media (max-width: 1200px){
-    .rth-form-row1{
+    main{
+        .parent-form{
+            form{
+                width: 60%;
+                .rth-form{
+                    .rth-form-row1{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px;
+                        .survey-service{
+                            width: 60%;
+                        }
+                        input{
+                            width: 60%;
+                        }
+                    }
+                    .rth-form-row2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        label:nth-of-type(1){
+                            input{
+                                width: 60%;
+                            }
+                        }
+                        label:nth-of-type(2){
+                            input{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+            .on-side{
+                padding-top: 30px;
+                img:nth-last-of-type(1){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:875px){
+    header{
+        .miima-contact-logo{
+            width: 7rem;
+        }
+        .head-mid-contact{
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+    main{
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 780px){
+    main{
+        padding-top: 8rem;
+        h3{
+            font-size: 25px;
+        }
+        .parent-form{
+            display: flex;
+            flex-direction: column;
+            form{
+                width: 100%;
+                .form-par{
+                    text-align: center;
+                }
+            }
+            .on-side{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+                img:nth-last-of-type(1){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px){
+    footer{
+        .stcol-foot{
+            h4{
+                white-space: normal;
+                width: 80%;
+            }
+            p{
+                display: none;
+            }
+            .ndcol-foot-c{
+                display: block;
+                p{
+                    display: block;
+                }
+            }
+        }
+        .ndcol-foot{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 660px){
+    header{
+        height: 5rem;
+        margin-right: 0;
+        .head-mid-contact{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            padding-right: 0;
+            margin-right: 5px;
+        }
+    }
+    footer{
+        .rdcol-foot{
+            padding-top: 20px;
+            margin: 0;
+            input{
+                width: 90%;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 615px){
+    header{
+        padding-left: 10px;
+        .head-mid-contact{
+            display: none;
+        }
+        .dropdown{
+            display: block;
+        }
+    }
+    main{
+        padding-top: 90px;
+        .parent-form{
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 540px){
+    main{
+        .parent-form{
+            form{
+                .st-form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .name-div{
+                        gap: 15px;
+                        input{
+                            width: 67%;
+                        }
+                    }
+                    .company-div{
+                        gap: 15px;
+                        input{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    main{
+        .b-form{
+            margin-inline: 0;
+            padding-inline: 0;
+            h3{
+                font-size: 30px;
+                white-space: normal;
+                width: 100%;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 515px){
+    footer{
         display: flex;
         flex-direction: column;
-        color: red;
+        .col-foot{
+            display: flex;
+            flex-direction: column;
+        }
+        .rdcol-foot{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 435px){
+    main{
+        .b-form{
+            margin-inline: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                white-space: normal;
+                width: 110%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 395px){
+    main{
+        .b-form{
+            h3{
+                white-space: normal;
+                width: 105%;
+                font-size: 28px;
+            }
+        }
     }
 }

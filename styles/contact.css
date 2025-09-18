@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'open sans',sans-serif;
 }
 
 header{
@@ -112,7 +112,7 @@ header button{
     margin-inline: 10%;
     border-radius: 15px;
     margin-top: 4rem;
-    background-color: rgba(25, 25, 71, 1);
+    background-color: rgb(46, 39, 102);
 }
 
 .contact-form{
@@ -127,19 +127,19 @@ header button{
 .name-div{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
 }
 
 .email-div{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
 }
 
 .message-div{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
 }
 
 .name{
@@ -147,6 +147,7 @@ header button{
     padding-top: 7px;
     padding-bottom: 7px;
     outline: none;
+    padding-left: 10px;
 }
 
 .email1{
@@ -154,6 +155,7 @@ header button{
     padding-top: 7px;
     padding-bottom: 7px;
     outline: none;
+    padding-left: 10px;
 }
 
 .message{
@@ -161,6 +163,7 @@ header button{
     height: 100px;
     padding-top: 10px;
     outline: none;
+    padding-left: 10px;
 }
 
 .attract-img{
@@ -463,14 +466,14 @@ footer{
 }
 
 @media (max-width: 735px){
-    header{
+    /*header{
         .head-mid-contact{
             display: none;
         }
         .dropdown{
             display: block;
         }
-    }
+    }*/
     .wrapper1{
         height: 19rem;
     }
@@ -505,6 +508,41 @@ footer{
         input{
             width: 13rem;
         }
+    }
+}
+
+@media (max-width: 680px){
+    header{
+        height: 6rem;
+    }
+    .head-mid-contact{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 25px;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+    .main-text{
+        padding-top: 35px;
+        h2{
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .head-mid-contact{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+    }
+}
+
+@media (max-width: 630px){
+    .miima-contact-logo{
+        width: 7rem;
     }
 }
 
@@ -581,6 +619,17 @@ footer{
 }
 
 @media (max-width: 515px){
+    main{
+        .main-text{
+            padding-top: 70px;
+            p{
+                transform: translateY(-20px);
+            }
+        }
+        .wrapper1{
+            margin-top: 0;
+        }
+    }
     footer{
         .col-foot{
             display: flex;

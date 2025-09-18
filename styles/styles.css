@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'open sans', sans-serif;
 }
 
 header{
@@ -105,15 +105,15 @@ header{
     position: relative;
 }*/
 
-.head-mid i{
+.dropdown i{
     display: none;
     margin-top: 6px;
     position: relative;
-    font-size: 3rem;
+    font-size: 20rem;
     color: rgba(13, 30, 73, 1);
     transform: translateY(-8px);
     background-color: rgba(13, 30, 73, .2);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .button-quote.special{
@@ -197,12 +197,12 @@ header{
 .cont2-col{
     display: flex;
     flex-direction: column;
-    background-color: rgba(13, 30, 73, .5);
+    background-color: rgba(66, 60, 121, 0.466);
     border-radius: 10px;
     align-items: center;
     width: 35%;
     height: 25rem;
-    box-shadow: 0 0 10px rgba(13, 30, 73, .7);
+    box-shadow: 0 0 10px rgba(62, 116, 255, 0.979);
     img{
         width: 100%;
         height: 55%;
@@ -753,6 +753,8 @@ footer{
     .dropdown{
         .bxr{
             display: block;
+
+            font-size: 2.5rem;
         }
     }
     .cont1-content{
