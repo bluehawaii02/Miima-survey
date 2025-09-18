@@ -147,7 +147,8 @@ header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
+        gap: 10%;
         padding-inline: 2%;
     }
     .sect2-row1-col2{
@@ -179,6 +180,34 @@ header{
         white-space: normal;
         width: 85%;
     }
+}
+.eng-services-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 1);
+    padding: 30px;
+    text-align: center;
+    width: 85%;
+    margin-inline: 5%;
+    padding-top: 0;
+    h6{
+        font-size: 20px;
+    }
+    .eng-grandchild{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        div{
+            background-color: rgba(74, 121, 127, 0.631);
+            border-radius: 20px;
+        }
+    }
+    /*div{
+        background-color: rgba(159, 233, 243, 0.329);
+    }*/
 }
 
 .sect2-row1-col2{

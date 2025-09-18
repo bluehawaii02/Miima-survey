@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
     z-index: 100;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    height: 6rem;
     .miima-contact-logo{
         width: 10rem;
     }
@@ -20,7 +21,7 @@ header{
         margin-right: 30px;
         a{
             text-decoration: none;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             color: rgba(7, 2, 48, 1);
             margin-inline: 5px;
@@ -42,7 +43,7 @@ header{
             gap: 5px;
             position: absolute;
             right: 30px;
-            margin-top: 44px;
+            margin-top: -5px;
             background-color: rgba(7, 2, 48, .3);
             padding: 10px;
             border-radius: 10px;
@@ -51,7 +52,7 @@ header{
                 text-decoration: none;
                 font-size: 25px;
                 font-weight: bold;
-                color: rgba(7, 2, 48, 1);
+                color: rgb(18, 10, 80);
             }
             a:hover{
                 background-color: rgba(255, 255, 255, .8);
@@ -62,7 +63,7 @@ header{
 }
 
 main{
-    padding-top: 10rem;
+    padding-top: 8rem;
     margin-inline: 5%;
     .b-form{
         text-align: center;

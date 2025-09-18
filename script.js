@@ -92,3 +92,12 @@ if(nameReview){
   nameReview.value = "";
 })*/
 
+const GoToQuote = document.querySelectorAll(".serv-bodyBtn");
+
+if(GoToQuote){
+  GoToQuote.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.location.href = "getQuote.html";
+    })
+  })
+}

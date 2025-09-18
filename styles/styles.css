@@ -208,6 +208,7 @@ header{
         height: 55%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        clip-path:   ellipse(54% 75% at 50% 25%);
     }
 }
 

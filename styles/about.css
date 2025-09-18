@@ -154,9 +154,12 @@ main{
     }
 }
 
+.why{
+    transform: translateY(-50px);
+}
 .sect-section2{
     text-align: center;
-    
+    transform: translateY(-40px);
     background-color: rgba(200, 200, 200, .3);
     padding: 3%;
     border-radius: 10px;
@@ -253,7 +256,7 @@ main{
 .section2-col2{
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
     justify-content: space-around;
     div{
         display: flex;
@@ -271,9 +274,11 @@ main{
         }
         p{
             white-space: normal;
+            margin-top: 0;
         }
         i{
-            font-size: 25px;
+            font-size: 30px;
+            color: rgba(10, 10, 61, 1);
         }
     }
 }
@@ -334,7 +339,7 @@ main{
     flex-direction: column;
     margin-inline:20%;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 0;
     h4{
         font-size: 20px;
         transform: translateY(20px);
