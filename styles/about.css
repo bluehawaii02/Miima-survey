@@ -387,7 +387,7 @@ main{
     input{
         outline: none;
         height: 20px;
-        width: 30%;
+        width: 40%;
         border: 1px solid rgba(0, 0, 200, .3);
         transform: translateY(5px);
         /*border: 1px solid rgba(0, 0, 200, 1);*/
@@ -631,6 +631,11 @@ footer{
     .dropdown{
         display: flex;
     }
+    .section4{
+        .name-review{
+            width: 70%;
+        }
+    }
 }
 
 @media (max-width: 700px){
@@ -723,6 +728,11 @@ footer{
     .dropdown{
         display: flex;
     }*/
+    .section4{
+        .name-review{
+            width: 70%;
+        }
+    }
 }
 
 @media (max-width: 550px) {
@@ -742,6 +752,9 @@ footer{
     }
     .section4{
         text-align: center;
+        .name-review{
+            width: 100%;
+        }
     }
     .section2-col1{
         display: grid;
