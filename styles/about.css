@@ -32,7 +32,7 @@ header{
     a{
     text-decoration: none;
     color: rgba(13, 30, 73, 1);
-    font-size: 25px;
+    font-size: 19px;
     font-weight: bold;
     }
 }
@@ -101,7 +101,7 @@ main{
 .section1{
     text-align: center;
     padding-inline: 10%;
-    background-image: url(../assets/services-4th-top1.jpg);
+    background-image: url(../assets/w-dodo2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,14 +111,23 @@ main{
     position: relative;
     h3{
         font-size: 35px;
-        backdrop-filter: blur(1px);
+        backdrop-filter: blur(.2px);
     }
     p{
         font-size: 25px;
-        backdrop-filter: blur(1px);
+        backdrop-filter: blur(.2px);
     }
 }
-
+.section1::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(
+    to bottom,
+    rgba(13,30,73,.7),
+    rgba(13,30,73,.7)
+    );
+}
 /*.quoteBtn{
     background-color: rgba(13, 30, 73, 1);
     color: rgba(255, 255, 255, 1);

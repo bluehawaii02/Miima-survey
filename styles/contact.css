@@ -16,6 +16,7 @@ header{
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-50px);
     padding-right: 30px;
+    height: 6.5rem;
 }
 
 header a{
@@ -31,10 +32,12 @@ header a{
     display: flex;
     flex-direction: row;
     gap: 15px;
-    font-size: 25px;
-    margin-right: 30px;
-    font-weight: bold;
-    color: rgba(25, 25, 71, 1);
+    margin-right: 20px;
+    a{
+        font-size: 19px;
+        font-weight: bold;
+        color: rgba(25, 25, 71, 1)
+    }
 }
 
 header button{
@@ -88,18 +91,20 @@ header button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 .main-text h2{
     font-size: 2.7rem;
     white-space: normal;
-    width: 50%;
+    width: 65%;
     text-align: center;
+    color: rgb(25, 25, 71);
 }
 
 .main-text p{
     font-size: 20px;
+    color: rgb(25, 25, 71);
 }
 
 .wrapper1{
@@ -148,6 +153,8 @@ header button{
     padding-bottom: 7px;
     outline: none;
     padding-left: 10px;
+    border-radius: 10px;
+    transform: translateX(-5px);
 }
 
 .email1{
@@ -156,6 +163,8 @@ header button{
     padding-bottom: 7px;
     outline: none;
     padding-left: 10px;
+    border-radius: 10px;
+    transform: translateX(-5px);
 }
 
 .message{
@@ -164,6 +173,8 @@ header button{
     padding-top: 10px;
     outline: none;
     padding-left: 10px;
+    border-radius: 10px;
+    transform: translateX(-5px);
 }
 
 .attract-img{
@@ -176,9 +187,11 @@ header button{
 .contact-form button{
     width: 30%;
     padding: 5px;
-    background-color: rgba(7, 212, 248, 1);
+    background-color: rgb(17, 110, 241);
     border: none;
     font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
 }
 
 .wrapper2{
@@ -217,7 +230,7 @@ header button{
 
 .rd-row{
     h5{
-     font-size: 25px;
+    font-size: 25px;
     }
     p{
         font-size: 15px;
@@ -281,6 +294,13 @@ footer{
 .col-foot{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.div2-footer-AT{
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
 }
 
 .stcol-foot h4{
