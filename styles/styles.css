@@ -89,16 +89,15 @@ header{
     transform: translateY(-10px);
 }*/
 
-.button-quote{
-    border: none;
-    background-color: rgba(214, 21, 21, 0.795);
+.G-quote-h{
+    background-color: rgb(9, 41, 124);
     color: rgba(255, 255, 255, 1);
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: bold;
-    padding-inline: 10px;
-    padding: 15px;
-    transform: translateY(-10px);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 8rem;
+    height: 2rem;
+    transform: translateY(-3px);
 }
 
 /*.menu-icon{
@@ -197,7 +196,7 @@ header{
 .cont2-col{
     display: flex;
     flex-direction: column;
-    background-color: rgba(66, 60, 121, 0.466);
+    background-color: rgba(238, 237, 244, 0.466);
     border-radius: 10px;
     align-items: center;
     width: 35%;
@@ -205,23 +204,41 @@ header{
     box-shadow: 0 0 10px rgba(62, 116, 255, 0.979);
     img{
         width: 100%;
-        height: 55%;
+        height: 65%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        clip-path:   ellipse(54% 75% at 50% 25%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
 
-.col-p1{
+.just-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.G-quote-h1{
+    background-color: rgb(8, 34, 99);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 10px;
     font-size: 25px;
+    width: 10rem;
+    height: 2rem;
+    justify-content: center;
+}
+
+.col-p1{
+    font-size: 18px;
     font-weight: bold;
 }
 
 .col-p2{
     padding-inline: 0;
-    font-size: 18px;
+    font-size: 15px;
     white-space: normal;
-    text-align: center;
     width: 98%;
     transform: translateY(-20px);
 }
@@ -247,23 +264,32 @@ header{
 }
 
 .cont3-rev1, .cont3-rev2{
-    width: 35%;
+    width: 50%;
     white-space: normal;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 19px;
+    box-shadow: 0 0 10px rgba(140, 140, 140, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding-top: 10px;
 }
 
 .rev-name{
     text-align: center;
 }
 
-.text-rev1 p:nth-of-type(1){
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+.text-rev1 {
+    padding-inline: 2%;
+    p:nth-of-type(1){
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
 }
-.text-rev2 p:nth-of-type(1){
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+.text-rev2 {
+    padding-inline: 2%;
+    p:nth-of-type(1){
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
 }
 
 footer{
@@ -355,7 +381,7 @@ footer{
         .cont2-col{
             width: 40%;
             img{
-                height: 50%;
+                height: 70%;
             }
         }
     }
@@ -364,7 +390,6 @@ footer{
 @media (max-width:980px){
     .head-mid{
         gap: 15px;
-        padding-right: 10px;
     }
     .cont1-content h1{
         width: 60%;
@@ -393,7 +418,7 @@ footer{
         gap: 10px;
         .cont2-col{
             img{
-                height: 50%;
+                height: 65%;
             }
         }
     }
@@ -437,6 +462,86 @@ footer{
     }
     .col-p1{
         font-size: 20px;
+    }
+    .cont3-revs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cont3-rev1{
+            width: 90%;
+        }
+        .cont3-rev2{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 745px){
+    .miima-logo{
+        height: 5rem;
+        width: 7.5rem;
+    }
+
+    header{
+        height: 5rem;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .head-mid{
+        margin-right: 0;
+        padding-right: 0;
+        .head-mid-st{
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+
+    .cont1{
+        .miima-vid{
+            height: 29rem;
+        }
+        .cont1-content{
+            height: 27.1rem;
+        }
+    }
+
+    .cont2{
+        margin-top: 15px;
+        transform: translateY(-30px);
+    }
+
+    
+}
+
+@media(max-width:727px){
+    .cont2-content{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        .cont2-col{
+            width: 90%;
+            img{
+                height: 60%;
+            }
+        }
+    }
+}
+
+@media(max-width: 700px){
+    .head-mid-st{
+        display: none;
+    }
+    .dropdown{
+        margin-right: 30px;
+        .bxr{
+            display: block;
+
+            font-size: 2.5rem;
+        }
+    }
+    .cont3-revs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -563,7 +668,7 @@ footer{
     }
     .rev-rev{
         white-space: normal;
-        width: 140%;
+        width: 90%;
     }
     .rev-name{
         margin-top: 0;
@@ -588,9 +693,15 @@ footer{
     .cont3-revs{
         display: flex;
         flex-direction: column;
-        margin-inline: 15%;
+        margin-inline: 5%;
         align-items: center;
-        width: 80%;
+        width: 90%;
+        .cont3-rev1{
+            width: 100%;
+        }
+        .cont3-rev2{
+            width: 100%;
+        }
     }
     .cont1-content p{
         white-space: normal;
@@ -633,10 +744,14 @@ footer{
             transform: translateX(-4rem);
         }
     }
+    .just-button{
+        margin-top: 0;
+        transform: translateY(-20px);
+    }
 }
 
 @media (max-width: 580px){
-    .head-mid-st{
+    /*.head-mid-st{
         margin-right: 0;
         padding-right: 0;
         display: flex;
@@ -651,7 +766,7 @@ footer{
     .head-mid-nd{
         margin-top: 30px;
         width: 7rem;
-    }
+    }*/
     .cont1{
         .miima-vid{
             height: 24rem;
@@ -748,16 +863,7 @@ footer{
 }
 
 @media (max-width: 530px){
-    .head-mid-st{
-        display: none;
-    }
-    .dropdown{
-        .bxr{
-            display: block;
-
-            font-size: 2.5rem;
-        }
-    }
+    
     .cont1-content{
         h1{
             white-space: normal;
@@ -775,7 +881,7 @@ footer{
 
     .rev-rev{
         white-space: normal;
-        width: 150%;
+        width: 95%;
     }
 
     footer{
