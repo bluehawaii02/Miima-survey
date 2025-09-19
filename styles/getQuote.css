@@ -13,17 +13,18 @@ header{
     justify-content: space-between;
     z-index: 100;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    height: 6rem;
+    height: 5rem;
     .miima-contact-logo{
         width: 10rem;
+        height: 5.5rem;
     }
     .head-mid-contact{
         margin-right: 30px;
         a{
             text-decoration: none;
-            font-size: 25px;
+            font-size: 19px;
             font-weight: bold;
-            color: rgba(7, 2, 48, 1);
+            color: rgb(23, 14, 89);
             margin-inline: 5px;
         }
     }
@@ -33,7 +34,7 @@ header{
         i{
             position: relative;
             font-size: 45px;
-            background-color: rgba(7, 2, 48, .3);
+            background-color: rgba(16, 8, 77, 0.3);
             border-radius: 5px;
             margin-right: 30px;
         }
@@ -60,6 +61,16 @@ header{
             }
         }
     }
+}
+
+.G-quote-q{
+    background-color: rgb(9, 41, 124);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 8rem;
+    height: 2rem;
 }
 
 main{
@@ -517,6 +528,10 @@ footer{
 @media (max-width: 615px){
     header{
         padding-left: 10px;
+        .miima-contact-logo{
+            width: 7.5rem;
+            height: 5rem;
+        }
         .head-mid-contact{
             display: none;
         }

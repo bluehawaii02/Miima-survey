@@ -13,6 +13,31 @@ button.addEventListener("click", () => {
 const fillQuoteBtn = document.querySelector(".get-started");
 
 fillQuoteBtn.addEventListener("click", () => {
-  window.location.href = "getQuote.html";
-  document.style.backgroundColor = "red";
+    window.location.href = "getQuote.html";
+    document.style.backgroundColor = "red";
+});
+
+//let's take the user to the quote page using our buttons
+
+/*const buttonsFquote = document.querySelectorAll(".G-Q-btn");
+
+if(buttonsFquote){
+    buttonsFquote.forEach((button) => {
+        button.addEventListener("click", () => {
+            console.log("clicked")
+            window.location.href = "getQuote.html";
+    });
+    })
+}*/
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("G-Q-btn")) {
+        window.location.href = "getQuote.html";
+    }
+});
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("G-quote-h")) {
+        window.location.href = "getQuote.html";
+    }
 });

@@ -80,6 +80,8 @@ header{
     width: 8rem;
     height: 2rem;
     transform: translateY(-3px);
+    pointer-events: auto;
+    z-index: 1000;
 }
 
 main{

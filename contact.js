@@ -97,3 +97,9 @@ menu.addEventListener("click", () => {
     dropdown.style.display ="none";
   }
 })
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("G-quote-c")) {
+        window.location.href = "getQuote.html";
+    }
+});

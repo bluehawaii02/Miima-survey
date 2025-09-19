@@ -101,3 +101,7 @@ if(GoToQuote){
     })
   })
 }
+
+//let's take the user to the quote using our buttons
+
+

@@ -83,3 +83,21 @@ async function submitReview() {
 }
 
 btn.addEventListener('click', submitReview);
+
+//let's take the user to the quote page using buttons
+
+/*const GquoteBtn = document.querySelectorAll(".G-quote-a");
+
+if(GquoteBtn){
+  GquoteBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.location.href = "getQuote.html";
+    })
+  })
+}*/
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("G-quote-a")) {
+    window.location.href = "getQuote.html";
+  }
+});
