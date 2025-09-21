@@ -306,7 +306,200 @@ main{
     }
 }
 
-
+.payment{
+    display: none;
+    flex-direction: column;
+    background-color: rgba(13, 101, 242, 0.533);
+    padding: 0 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 70px;
+    h6{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .owner-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        .name{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            label{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            input{
+                height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                padding: 10px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            label{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            input{
+                height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                padding: 10px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+        }
+        .address{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            label{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            input{
+                height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                padding: 10px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+        }
+        .amount{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            label{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+            input{
+                height: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                padding: 10px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+        }
+    }
+    .payment-option{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 20px;
+        margin-top: 20px;
+        .btns{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            padding-top: 0;
+            transform: translateY(-10px);
+            button{
+                border: none;
+                font-size: 18px;
+                border-radius: 15px;
+                padding: 10px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+            button:hover{
+                background-color: rgba(162, 95, 95, 0.4);
+            }
+        }
+    }
+    .toggles{
+        .bank{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-size: 18px;
+                white-space: normal;
+                width: 90%;
+                text-align: center;
+            }
+            .bank-confirm{
+                display: hidden;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 20px;
+                font-size: 20px;
+                border-radius: 15px;
+                border: none;
+                margin-top: 20px;
+                padding: 20px;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+            }
+        }
+        .zelle{
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 30px;
+            align-items: center;
+            .zelle1{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                label{
+                    font-size: 20px;
+                }
+                input{
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 20px;
+                    padding: 10px;
+                    border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+                }
+            }
+            .zelle2{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                input{
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    border-radius: 20px;
+                    padding: 10px;
+                    border-bottom: 2px solid rgba(9, 10, 92, 0.863);
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70%;
+                border: none;
+                border-bottom: 2px solid rgba(9, 10, 92, 0.863) ;
+                height: 30px;
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 15px;
+                background-color: rgba(12, 14, 161, 0.863);
+                color: white;
+            }
+        }
+    }
+}
 
 
 
@@ -472,6 +665,11 @@ footer{
                     display: none;
                 }
             }
+        }
+        .payment{
+            display: flex;
+            justify-content: center;
+            width: 90%;
         }
     }
 }

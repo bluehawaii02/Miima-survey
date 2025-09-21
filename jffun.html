@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6fa;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .payment-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a2a6c;
+    }
+
+    .method {
+      margin: 1rem 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    select, input, button {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #1a2a6c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #16317a;
+    }
+
+    .details {
+      display: none;
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 0.9rem;
+    }
+
+    .details.active {
+      display: block;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Make a Payment</h2>
+
+    <div class="method">
+      <label for="payment-method">Choose Payment Method</label>
+      <select id="payment-method">
+        <option value="">-- Select --</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="card">Credit Card</option>
+        <option value="zelle">Zelle</option>
+      </select>
+    </div>
+
+    <!-- Bank Transfer -->
+    <div id="bank" class="details">
+      <p><strong>Bank Transfer Instructions:</strong></p>
+      <p>Account Name: ABC Services LLC</p>
+      <p>Bank: Chase Bank</p>
+      <p>Account Number: 123456789</p>
+      <p>Routing Number: 987654321</p>
+      <p class="note">Please include your name in the transfer reference.</p>
+    </div>
+
+    <!-- Credit Card -->
+    <div id="card" class="details">
+      <label for="cc-name">Name on Card</label>
+      <input type="text" id="cc-name" placeholder="John Doe" />
+
+      <label for="cc-number">Card Number</label>
+      <input type="text" id="cc-number" placeholder="1111 2222 3333 4444" />
+
+      <label for="cc-exp">Expiry Date</label>
+      <input type="month" id="cc-exp" />
+
+      <label for="cc-cvc">CVC</label>
+      <input type="text" id="cc-cvc" placeholder="123" />
+    </div>
+
+    <!-- Zelle -->
+    <div id="zelle" class="details">
+      <p><strong>Pay with Zelle:</strong></p>
+      <p>Email: payments@abcservices.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p class="note">Send payment via your bank’s Zelle option and use your invoice number as reference.</p>
+    </div>
+
+    <button onclick="submitPayment()">Submit Payment</button>
+  </div>
+
+  <script>
+    const paymentSelect = document.getElementById("payment-method");
+    const details = document.querySelectorAll(".details");
+
+    paymentSelect.addEventListener("change", function() {
+      details.forEach(d => d.classList.remove("active"));
+      const selected = this.value;
+      if (selected) {
+        document.getElementById(selected).classList.add("active");
+      }
+    });
+
+    function submitPayment() {
+      const method = paymentSelect.value;
+      if (!method) {
+        alert("Please select a payment method.");
+        return;
+      }
+      alert("Thank you! Your payment via " + method.toUpperCase() + " is being processed.");
+    }
+  </script>
+</body>
+</html>

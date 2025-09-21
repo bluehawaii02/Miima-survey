@@ -38,7 +38,7 @@
         </div>
 
         <div class="parent-form">
-            <form action="submit">
+            <form class="form02">
                 <p class="form-par">Fill the form to get a quote</p>
                 <div class="st-form">
                     <div class="name-div">
@@ -132,14 +132,118 @@
                 </div>
             </form>
 
-            <div class="on-side">
+            <div class="payment">
+                <h6>Make Payment</h6>
+                <div class="owner-info">
+                    <div class="name">
+                        <label for="user-name">Name</label>
+                        <input type="text" class="user-name" id="user-name" name="user-name" required>
+                    </div>
+                    <div class="email">
+                        <label for="user-email">Email</label>
+                        <input type="email" class="user-email" id="user-email" name="user-email" required>
+                    </div>
+                    <div class="address">
+                        <label for="user-address">Address</label>
+                        <input type="text" name="user-address" id="user-address" class="user-address" required>
+                    </div>
+                    <div class="amount">
+                        <label for="user-amount">Amount</label>
+                        <input type="number" class="user-amount" id="user-amount" required placeholder="Amount specified in invoice">
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <h6>Choose a payment option</h6>
+                    <div class="btns">
+                        <button class="creditBtn">CREDIT CARD</button>
+                        <button class="bankBtn">BANK TRANSFER</button>
+                        <button class="zelleBtn">ZELLE</button>
+                    </div>
+                </div>
+                <div class="toggles">
+                    <div class="bank">
+                        <p>We have sent you our bank account details as part of the invoice.Make payment then upload your confirmation below.If you have not filled the form to get Quote Kindly do so first</p>
+                        <label for="bank-confirm">upload payment screenshot</label>
+                        <input type="file" name="bank-confirm" class="bank-confirm">
+                        <button>Confirm Payment</button>
+                    </div>
+                    <!--<div class="card">
+                        <div class="info">
+                            <p>Card information</p>
+                            <div class="inputs-c1">
+                                <input type="number" class="card-number" id="card-number" required>
+                                <input type="month" class="card-expiry" id="card-expiry" required>
+                                <input type="number" class="card-cvc" id="card-cvc" required>
+                            </div>
+                            <div class="inputs-c2">
+                                <label for="name-card">Cardholder name</label>
+                                <input type="text" class="name-card" id="name-card" name="name-card" required placeholder="Full names on card">
+                            </div>
+                            <div class="origin-card">
+                                <label for="origin-card-child">Country</label>
+                                <input type="text" name="origin-card-child" class="origin-card-child" id="origin-card-child" required>
+                                <input type="number" class="zip" id="zip" required placeholder="zip">
+                            </div>
+                            <button>Confirm Payment</button>
+                        </div>
+                    </div>-->
+                    <div class="zelle">
+                        <div class="zelle1">
+                            <label for="zelle-email">Email</label>
+                            <input type="email" class="zelle-email" id="zelle-email" name="zelle-email" required>
+                        </div>
+                        <div class="zelle2">
+                            <label for="zelle-number">Number</label>
+                            <input type="tell" class="zelle-number" id="zelle-number" name="zelle-number" required>
+                        </div>
+                        <button>Complete Payment</button>
+                    </div>
+                </div>
+                <!--<h6>Choose Payment Option</h6>
+                <div class="bank-transfer">
+
+                </div>
+                <div class="credit-card">
+                    <h5>Pay With Card</h5>
+                    <div class="card-email">
+                        <label for="c-email">Email</label>
+                        <input type="email" name="c-email" class="c-email" id="c-email" required>
+                    </div>
+                    <div class="card-child2">
+                        <h5>Payment Method</h5>
+                        <div class="grandchild1">
+                            <p>Card information</p>
+                            <div class="card-number">
+                                
+                            </div>
+                            <div class="holder-name">
+                                <label for="holdersName">cardholder name</label>
+                                <input type="text" class="holdersName" id="holdersName" placeholder="Full names on card" required>
+                            </div>
+                            <div class="card-country">
+                                <p>country or origin</p>
+                                <input type="text" class="c-country" required>
+                                <input type="number" placeholder="zip">
+                            </div>
+                            <button>Make Payment</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="zelle">
+
+                </div>
+            </div>-->
+
+            
+        </div>
+
+        <div class="on-side">
                 <img src="assets/quote-bg.jpg" alt="miima project">
                 <img src="assets/quote1.webp" alt="miima projects">
                 <img src="assets/quote2.jpg" alt="miima projects">
-                <img src="assets/quote4.webp" alt="miima projects">
-                <img src="assets/l-trial1.jpeg" alt="miima projects">
+                <img src="assets/quote4.webp" alt="miima projects" class="img5">
+                <img src="assets/l-trial1.jpeg" alt="miima projects" class="img5">
             </div>
-        </div>
 
         <div class="modal">
             <b>Thank you for reaching out!</b>
