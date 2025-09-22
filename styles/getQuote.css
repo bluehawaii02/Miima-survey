@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    font-family: sans-serif
+    font-family: sans-serif;
+    background-color: rgba(242, 242, 242, 0.847);
 }
 
 header{
@@ -99,35 +100,62 @@ main{
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
+            overflow-y: auto;
+            .introform{
+                border: 1px solid rgba(7, 2, 48, .1);
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+                border-top: 12px solid rgba(20, 14, 161, .9);
+                h4{
+                    padding-left: 15px;
+                    font-size: 20px;
+                    color: rgba(10, 11, 95, 0.863);
+                }
+                p{
+                    padding-left: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                hr{
+                    border: 1px solid rgba(220, 220, 220, .5);
+                }
+            }
             .st-form{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 /*justify-content: space-between;*/
-                border: 1px solid rgba(7, 2, 48, .3);
                 border-radius: 10px;
-                padding-inline: 50px;
-                padding: 40px;
-                gap: 15%;
+                gap: 10px;
                 .name-div{
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 15px;
+                    padding:35px 30px;
+                    font-size: 15px;
+                    background-color: rgba(255, 255, 255, 1);
+                    border: 1px solid rgba(7, 2, 48, .15);
+                    border-radius: 10px;
                     input{
-                        width: 120%;
+                        width: 100%;
                         border: none;
-                        border-bottom: 1px solid rgba(7, 2, 48, .3);
+                        border-bottom: 1px solid rgba(7, 2, 48, .15);
                         outline: none;
                     }
                 }
                 .company-div{
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 19px;
+                    font-size: 15px;
+                    padding: 35px 30px;
+                    background-color: rgba(255, 255, 255, 1);
+                    border-radius: 10px;
+                    border: 1px solid rgba(7, 2, 48, .15);
                     input{
-                        width: 120%;
+                        width: 100%;
                         border: none;
-                        border-bottom: 1px solid rgba(7, 2, 48, .3);
+                        border-bottom: 1px solid rgba(7, 2, 48, .15);
                         outline: none;
                     }
                 }
@@ -135,25 +163,45 @@ main{
             .nd-form{
                 display: flex;
                 flex-direction: column;
-                border: 1px solid rgba(7, 2, 48, .3);
-                border-radius: 10px;
-                padding: 40px;
-                padding-inline: 50px;
-                gap: 40px;
-                div{
+                gap: 10px;
+                .nd-firstRow{
+                    background-color: rgba(255, 255, 255, 1);
+                    border: 1px solid rgba(7, 2, 48, .15);
+                    border-radius: 10px;
                     display: flex;
                     flex-direction: row;
-                    /*justify-content: space-between;*/
-                    gap: 15%;
+                    padding: 35px 30px;
+                    justify-content: space-between;
                     div{
                         display: flex;
                         flex-direction: column;
-                        gap: 20px;
+                        width: 45%;
+                        font-size: 15px;
+                        gap: 15px;
                         input{
-                            width: 120%;
-                            border: none;
-                            border-bottom: 1px solid rgba(7, 2, 48, .3);
                             outline: none;
+                            border: none;
+                            border-bottom: 1px solid rgba(7, 2, 48, .15);
+                        }
+                    }
+                }
+                .nd-seccondRow{
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid rgba(7, 2, 48, .15);
+                    background-color: rgba(255, 255, 255, 1);
+                    padding: 35px 30px;
+                    border-radius: 10px;
+                    justify-content: space-between;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        width: 45%;
+                        font-size: 15px;
+                        gap: 15px;
+                        input{
+                            border: none;
+                            border-bottom: 1px solid rgba(7, 2, 48, .15);
                         }
                     }
                 }
@@ -162,10 +210,11 @@ main{
                 display: flex;
                 flex-direction: row;
                 gap: 15%;
-                border: 1px solid rgba(7, 2, 48, .3);
+                border: 1px solid rgba(7, 2, 48, .15);
                 border-radius: 10px;
                 padding: 40px;
                 padding-inline: 40px;
+                background-color: rgba(255, 255, 255, 1);
                 div{
                     display: flex;
                     flex-direction: column;
@@ -173,7 +222,7 @@ main{
                     input{
                         width: 120%;
                         border: none;
-                        border-bottom: 1px solid rgba(7, 2, 48, .3);
+                        border-bottom: 1px solid rgba(7, 2, 48, .15);
                         outline: none;
                     }
                 }
@@ -182,10 +231,11 @@ main{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
-                border: 1px solid rgba(7, 2, 48, .3);
+                border: 1px solid rgba(7, 2, 48, .15);
                 border-radius: 10px;
                 padding-inline: 40px;
                 padding: 50px;
+                background-color: rgba(255, 255, 255, 1);
                 .rth-form-row1{
                     display: flex;
                     flex-direction: row;
@@ -196,6 +246,7 @@ main{
                         gap: 20px;
                         input{
                             outline: none;
+                            border: 1px solid rgba(7, 2, 48, .15);
                         }
                     }
                     label:nth-of-type(2){
@@ -231,6 +282,7 @@ main{
                         input{
                             width: 135%;
                             outline: none;
+                            border: 1px solid rgba(7, 2, 48, .55);
                         }
                     }
                 }
@@ -240,9 +292,11 @@ main{
                         flex-direction: column;
                         gap: 20px;
                         textarea{
-                            min-height: 40px;
+                            min-height: 60px;
                             outline: none;
                             padding: 5px;
+                            border: 1px solid rgba(7, 2, 48, .35);
+                            border-radius: 10px;
                         }
                     }
                 }
@@ -252,15 +306,16 @@ main{
                 height: 40px;
                 border: none;
                 border-radius: 10px;
-                background-color: rgba(7, 2, 48, .3);
+                background-color: rgb(10, 9, 79);
                 font-size: 20px;
-                
+                color: rgba(255, 255, 255, 1);
             }
             
         }
         .buttons{
             display: flex;
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
             .p-payment{
                 background-color: rgba(9, 10, 92, 0.863);
@@ -269,6 +324,14 @@ main{
                 border: none;
                 border-radius: 10px;
                 font-size: 20px;
+            }
+            .clear{
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 20px;
+                color: rgba(10, 11, 95, 0.863);
+                background: transparent;
+                border: none;
             }
         }
         .some-info{

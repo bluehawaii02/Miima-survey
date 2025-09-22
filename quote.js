@@ -53,3 +53,11 @@ if(ToBank && BankPage && ZellePage){
         };
     });
 }
+
+const clearBtn = document.querySelector(".clear");
+
+if(clearBtn && form){
+    clearBtn.addEventListener("click", () => {
+        form.reset();
+    })
+}
