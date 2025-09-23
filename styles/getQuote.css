@@ -21,12 +21,42 @@ header{
     }
     .head-mid-contact{
         margin-right: 30px;
+        display: flex;
+        flex-direction: row;
         a{
             text-decoration: none;
             font-size: 19px;
             font-weight: bold;
             color: rgb(23, 14, 89);
             margin-inline: 5px;
+        }
+        .service-li{
+            list-style-type: none;
+            position: relative;
+        }
+        .service-li:hover{
+            .service-child{
+                display: flex;
+            }
+        }
+        .service-child{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 10px 10px;
+            width: 13rem;
+            box-shadow: 0 0 10px rgba(10, 11, 95, 0.863);
+            margin-top: 0;
+            padding-top: 0;
+            li{
+                list-style-type: none;
+                padding: 10px;
+                a{
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+            }
         }
     }
     .dropdown{
@@ -120,7 +150,6 @@ main{
                 p:nth-of-type(1){
                     padding-left: 15px;
                     padding-top: 10px;
-                    padding-bottom: 10px;
                 }
                 p:nth-of-type(2){
                     font-size: 15px;
