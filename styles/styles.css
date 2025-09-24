@@ -437,8 +437,15 @@ footer{
         .cont2-col{
             width: 40%;
             img{
-                height: 70%;
+                height: 60%;
             }
+        }
+    }
+}
+@media(max-width:1000px){
+    .cont2-content{
+        .cont2-col{
+            height: 20rem;
         }
     }
 }
@@ -802,8 +809,9 @@ footer{
         align-items: center;
         gap: 40px;
         .cont2-col{
+            height: 24rem;
             img{
-                height: 60%;
+                height: 68%;
             }
         }
     }
