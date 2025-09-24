@@ -41,3 +41,11 @@ document.addEventListener("click", (e) => {
         window.location.href = "getQuote.html";
     }
 });
+
+const YsidBtn =  document.querySelectorAll(".young-sid");
+
+YsidBtn.forEach((button) => {
+    button.addEventListener("click", () => {
+        window.location.href = "getQuote.html";
+    });
+});

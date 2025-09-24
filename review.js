@@ -101,3 +101,21 @@ document.addEventListener("click", (e) => {
     window.location.href = "getQuote.html";
   }
 });
+
+const YsidBtn = document.querySelectorAll(".nicBtn");
+
+YsidBtn.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.location.href = "getQuote.html";
+  });
+});
+
+const ContactNic = document.querySelector(".callC");
+
+if(ContactNic){
+  ContactNic.addEventListener("click", () => {
+    window.location.href = "contact.html";
+  });
+}else{
+  console.log("what varriable are you calling")
+};

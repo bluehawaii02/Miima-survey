@@ -765,7 +765,7 @@ footer{
         }
         .head-mid-contact{
             a{
-                font-size: 25px;
+                font-size: 19px;
             }
         }
     }
@@ -783,6 +783,7 @@ footer{
         .parent-form{
             display: flex;
             flex-direction: column;
+            width: 80%;
             form{
                 width: 100%;
                 .form-par{
@@ -825,6 +826,13 @@ footer{
         }
         .ndcol-foot{
             display: none;
+        }
+    }
+}
+@media(max-width:695px){
+    .parent-form{
+        iframe{
+            width: 120%;
         }
     }
 }

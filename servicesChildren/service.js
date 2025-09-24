@@ -1,0 +1,1 @@
+const QuoteBBtn = document.querySelector(".G")
