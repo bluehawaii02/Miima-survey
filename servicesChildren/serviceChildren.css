@@ -29,6 +29,9 @@ header{
             color: rgb(23, 14, 89);
             margin-inline: 5px;
         }
+        li{
+            list-style-type: none;
+        }
         .service-li{
             list-style-type: none;
             position: relative;
