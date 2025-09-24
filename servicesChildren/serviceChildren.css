@@ -197,11 +197,14 @@ main{
             padding-right: 20px;
             padding-left: 10px;
             width: 65%;
+            .lost{
+                display: none;
+            }
             h4{
                 color: rgba(10, 11, 95, 0.863);
                 font-size: 20px;
             }
-            ul{
+            .n-lost{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -529,12 +532,17 @@ footer{
             }
         }
         .sect5{
+            
             .process{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-inline: 10%;
                 .stupid{
                     white-space: normal;
                     width: 80%;
                     text-align: center;
-                    margin-inline: 10%;
                 }
                 .processChild{
                     display: grid;
@@ -544,7 +552,7 @@ footer{
                     justify-content: center;
                     div{
                         display: flex;
-                        width: 70%;
+                        width: 100%;
                     }
                 }
                 
@@ -562,6 +570,14 @@ footer{
     }
 }
 @media(max-width:740px){
+    header{
+        .head-mid-contact{
+            display: none;
+        }
+        .dropdown{
+            display: flex;
+        }
+    }
     main{
         .sect3{
             .sect3-div2{
@@ -573,18 +589,51 @@ footer{
 @media(max-width:700px){
     main{
         .sect3{
+            display: flex;
+            flex-direction: column;
             .sect3-div2{
-                ul{
-                    display: grid;
+                width: 58%;
+                .n-lost{
+                    display: none;
                     grid-template-columns: repeat(2, auto);
                     li{
                         width: 50%;
                         display: none;
                         flex-direction: column;
-                        span{
-                            display: flex;
-                        }
                     }
+                }
+                .lost{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    list-style-type: none;
+                    gap: 10px;
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                    }
+                    i{
+                        font-size: 15px;
+                        background-color: rgba(10, 11, 95, 0.863);
+                        color: rgba(255, 255, 255, 1);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:680px){
+    footer{
+        .footer-st{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .top{
+                .getbtn{
+                    display: none;
                 }
             }
         }

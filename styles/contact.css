@@ -38,6 +38,35 @@ header a{
         font-weight: bold;
         color: rgba(25, 25, 71, 1)
     }
+    .service-li{
+        list-style-type: none;
+        position: relative;
+    }
+    .service-li:hover{
+        .service-child{
+            display: flex;
+        }
+    }
+    .service-child{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 10px 10px;
+        width: 13rem;
+        box-shadow: 0 0 10px rgba(10, 11, 95, 0.863);
+        margin-top: 0;
+        padding-top: 0;
+        z-index: 100;
+        li{
+            list-style-type: none;
+            padding: 10px;
+            a{
+                font-size: 17px;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 
@@ -282,84 +311,105 @@ header a{
 }
 
 footer{
-    background-color: rgb(25, 25, 71);
-    padding-inline: 30px;
-    padding-top: 20px;
+    background-color: rgb(5, 6, 52);
     color: rgba(255, 255, 255, 1);
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 5rem;
-}
-
-.col-foot{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.div2-footer-AT{
-    display: flex;
-    flex-direction: row;
-    padding-right: 30px;
-}
-
-.stcol-foot h4{
-    white-space: normal;
-    width: 50%;
-}
-
-.ndcol-foot{
-    padding-top: 25px;
-}
-
-.ndcol-foot-c{
-    display: none;
-}
-
-.ndcol-foot-i{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.logo-foot{
-    width: 30%;
-}
-
-.rdcol-foot{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 20px;
-    font-size: 20px;
-}
-
-.rdcol-foot input{
-    height: 20px;
-    width: 20rem;
-    border-radius: 15px;
-    outline: none;
-    padding: 15px;
-    font-size: 15px;
-}
-
-.rdcol-foot button{
-    border: none;
-    width: 60%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 2.5rem;
-    background-color: rgba(53, 117, 236, 1);
-    font-size: 15px;
-    color: rgba(255, 255, 255, 1);
-    border-radius: 10px;
-}
-
-.copyright{
-    padding-top: auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    margin-top: 80px;
+    .footer-st{
+        display: flex;
+        flex-direction: row;
+        padding-inline: 2%;
+        justify-content: space-between;
+        padding-right: 5%;
+        .left{
+            h6{
+                font-size: 15px;
+            }
+            img{
+                width: 7rem;
+                height: 4rem;
+                margin-top: 0;
+            }
+            p{
+                white-space: normal;
+                width: 80%;
+            }
+        }
+        .right{
+            margin-top: 25px;
+            p{
+                transform: translateX(-100px);
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 0;
+                transform: translateX(-100px);
+                li{
+                    list-style-type: none;
+                    border-right: 1px solid rgb(48, 45, 68);
+                    padding-right: 10px;
+                }
+            }
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 10%;
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                border: none;
+                background-color: rgba(218, 7, 7, 0.863);
+                border-radius: 30px;
+                padding: 10px;
+                width: 40%;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            .contact{
+                display: flex;
+                flex-direction: column;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+                border: none;
+                background-color: rgba(218, 7, 7, 0.863);
+                border-radius: 30px;
+                padding: 10px;
+                width: 60%;
+            }
+            .stupid-btn{
+                display: none;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    hr{
+        border: .5px solid rgb(128, 120, 120);
+        width: 95%;
+        margin-top: 30px;
+    }
+    .Ps{
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 1250px){
@@ -386,6 +436,15 @@ footer{
         h2{
             white-space: normal;
             width: 70%;
+        }
+    }
+}
+@media(max-width:990px){
+    footer{
+        .footer-st{
+            .right{
+                display: none;
+            }
         }
     }
 }
@@ -621,10 +680,19 @@ footer{
 @media (max-width: 680px){
     header{
         height: 6rem;
+        .head-mid-contact{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .service-li{
+                transform: translateY(-4px);
+            }
+        }
     }
     .head-mid-contact{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 10px;
         font-size: 25px;
         padding-right: 10px;
@@ -636,11 +704,27 @@ footer{
             font-size: 35px;
         }
     }
+    footer{
+        .footer-st{
+            display: flex;
+            flex-direction: column;
+            .button{
+                display: none;
+            }
+            .bottom{
+                .stupid-btn{
+                    display: flex;
+                }
+            }
+        }
+    }
 }
 
-@media (max-width: 640px){
-    .head-mid-contact{
-        display: none;
+@media (max-width: 660px){
+    header{
+        .head-mid-contact{
+            display: none;
+        }
     }
     .dropdown{
         display: flex;
