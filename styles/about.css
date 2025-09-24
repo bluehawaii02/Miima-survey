@@ -190,6 +190,7 @@ main{
         border-left: 4px solid rgba(0, 0, 200, 1);
         border-right: 4px solid rgba(0, 0, 200, 1);
         box-shadow: 0 0 10px rgba(0, 0, 200, .7);
+        animation: fadeinUp 1.5s ease;
         h4{
             display: flex;
             align-items: start;
@@ -198,6 +199,16 @@ main{
         p{
             transform: translateY(-80px);
         }
+    }
+}
+@keyframes fadeinUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 /*.quoteBtn{
@@ -351,6 +362,7 @@ main{
         width: 90%;
         text-align: center;
         border-top: 5px solid rgba(0, 0, 200, 1);
+        animation: fadeinUp1 2s ease;
         h5{
             font-size: 20px;
             color: rgba(10, 11, 95, 0.863);
@@ -371,6 +383,16 @@ main{
             background: linear-gradient(to bottom,rgba(0, 0, 0, 1), rgb(25, 9, 94), rgb(106, 12, 189) );
             border-radius: 50%;
         }
+    }
+}
+@keyframes fadeinUp1 {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
