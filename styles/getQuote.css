@@ -378,17 +378,29 @@ main{
             font-size: 20px;
         }
         .on-side{
-            width: 35%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             gap: 30px;
+            background: url(../assets/q-q-image.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
             img{
+                display: none;
                 width: 100%;
                 border-radius: 20px;
             }
             img:nth-last-of-type(1){
                 display: none;
             }
+        }
+        .on-side:before{
+            content: "";
+            background: linear-gradient(to bottom, rgba(17, 7, 110, 0.464), rgba(17, 7, 110, .464));
+            position: absolute;
+            inset: 0;
         }
     }
     .modal{
