@@ -60,7 +60,7 @@ document.addEventListener("click", (e) => {
         window.location.href = "getQuote.html";
     }
 });
- let slideIndex = 1;
+    let slideIndex = 1;
         const slides = document.querySelectorAll('.testimonials-slide');
         const dots = document.querySelectorAll('.dot');
         
@@ -100,3 +100,18 @@ document.addEventListener("click", (e) => {
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
+
+const QuoteArchi = document.querySelector(".architect-quote");
+const ContArchitect = document.querySelector(".archi-quote");
+
+if(QuoteArchi){
+    QuoteArchi.addEventListener("click", () => {
+        window.location.href = "getQuote.html";
+    })
+};
+
+if(ContArchitect){
+    ContArchitect.addEventListener("click", () => {
+        window.location.href = "contact.html";
+    })
+};

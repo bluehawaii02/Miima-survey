@@ -943,6 +943,19 @@ footer{
         margin-top: 0;
     }
 }
+@media(max-width:650px){
+    .get-started-div{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        h4{
+            font-size: 30px;
+        }
+        p{
+            white-space: normal;
+            width: 100%;
+        }
+    }
+}
 
 @media (max-width:635px){
     .col-foot{
@@ -984,6 +997,14 @@ footer{
         padding: 0;
         margin: 0;
         padding-left: 20px;
+    }
+}
+@media(max-width:510px){
+    .cont-b3{
+        .home-butwhy{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 @media (max-width: 500px){

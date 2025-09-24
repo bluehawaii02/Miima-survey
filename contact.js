@@ -103,3 +103,45 @@ document.addEventListener("click", (e) => {
         window.location.href = "getQuote.html";
     }
 });
+
+
+ let slideIndex = 1;
+        const slides = document.querySelectorAll('.testimonials-slide');
+        const dots = document.querySelectorAll('.dot');
+        
+        function showSlide(n) {
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+                if (index + 1 === slideIndex) {
+                    slide.classList.add('active');
+                } else if (index + 1 < slideIndex) {
+                    slide.classList.add('prev');
+                }
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index + 1 === slideIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+        
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+        
+        function nextSlide() {
+            showSlide(slideIndex += 1);
+        }
+        
+        // Auto-advance slides every 7 seconds (nice slow pace for reading two cards)
+        setInterval(nextSlide, 7000);
+
+        // Smooth scrolling for navigation
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
