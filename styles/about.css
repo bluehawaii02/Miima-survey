@@ -11,7 +11,7 @@ header{
     padding-left: 10px;
     padding-right: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    height: 6.5rem;
+    height: 5rem;
     padding-top: 10px;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
@@ -22,6 +22,7 @@ header{
 
 .miima-about-logo{
     width: 10rem;
+    height: 5rem;
 }
 
 .head-mid-st-about{
@@ -140,36 +141,64 @@ main{
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
 }*/
-
-.section1{
-    text-align: center;
-    padding-inline: 10%;
-    background-image: url(../assets/w-dodo2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20rem;
-    padding-top: 8rem;
-    color: rgba(255, 255, 255, 1);
+.b-sect1{
     position: relative;
-    h3{
-        font-size: 35px;
-        backdrop-filter: blur(.2px);
+    overflow: hidden;
+    height: 250px;
+    img{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: 50% 0%;
     }
-    p{
-        font-size: 25px;
-        backdrop-filter: blur(.2px);
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: rgba(255, 255, 255, 1);
     }
 }
-.section1::before{
-    content:"";
-    position:absolute;
-    inset:0;
+.b-sect1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
     background: linear-gradient(
     to bottom,
     rgba(13,30,73,.7),
     rgba(13,30,73,.7)
     );
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5%;
+    gap: 5%;
+    margin-top: 30px;
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 5px;
+        padding-left: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 15rem;
+        border-radius: 10px;
+        border-left: 4px solid rgba(0, 0, 200, 1);
+        border-right: 4px solid rgba(0, 0, 200, 1);
+        box-shadow: 0 0 10px rgba(0, 0, 200, .7);
+        h4{
+            display: flex;
+            align-items: start;
+            color: rgba(10, 11, 95, 0.863);
+        }
+        p{
+            transform: translateY(-80px);
+        }
+    }
 }
 /*.quoteBtn{
     background-color: rgba(13, 30, 73, 1);
@@ -187,7 +216,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-inline: 5%;
-    margin-top: 6rem;
+    margin-top: 1rem;
     background-color: rgba(200, 200, 200, .3);
     padding: 3rem;
     border-radius: 10px;
@@ -306,8 +335,8 @@ main{
 }
 
 .section2-col2{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
     justify-content: space-around;
     div{
@@ -319,10 +348,12 @@ main{
         box-shadow:  0 0 10px rgba(0, 0, 200, .7);
         font-family: Verdana, Geneva, Tahoma, sans-serif ;
         align-items: center;
-        width: 30%;
+        width: 90%;
         text-align: center;
+        border-top: 5px solid rgba(0, 0, 200, 1);
         h5{
             font-size: 20px;
+            color: rgba(10, 11, 95, 0.863);
         }
         p{
             white-space: normal;
@@ -331,6 +362,14 @@ main{
         i{
             font-size: 30px;
             color: rgba(10, 10, 61, 1);
+        }
+        h6{
+            font-size: 25px;
+            padding: 5px;
+            margin: 0;
+            margin-top: 20px;
+            background: linear-gradient(to bottom,rgba(0, 0, 0, 1), rgb(25, 9, 94), rgb(106, 12, 189) );
+            border-radius: 50%;
         }
     }
 }
