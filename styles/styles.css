@@ -1404,6 +1404,12 @@ footer{
                 padding: 1rem;
             }
             
+<<<<<<< HEAD
+=======
+            header {
+                padding: 1rem;
+            }
+>>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
 
             .service-category {
                 padding: 1.5rem;
@@ -1418,7 +1424,11 @@ footer{
   display: flex;
   flex-direction: column;
   position: fixed;
+<<<<<<< HEAD
   top: 3.1rem; /* header height */
+=======
+  top: 5.5rem; /* header height */
+>>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
   left: 0;
   right: 0;
   bottom: 0;
@@ -1426,7 +1436,10 @@ footer{
   z-index: 1500;
   padding: 1rem;
   overflow-y: auto;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+>>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
 }
 
 /* mobile menu toggle icon */
@@ -1521,6 +1534,7 @@ footer{
     font-size: 16px;
   }
 }
+<<<<<<< HEAD
 @media(max-width:705px){
     .cont2{
         .cont2-content{
@@ -1534,3 +1548,5 @@ footer{
         }
     }
 }
+=======
+>>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
