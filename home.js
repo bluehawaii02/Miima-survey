@@ -1,14 +1,62 @@
-const button = document.querySelector(".bx-menu");
-const content = document.querySelector(".head-mid-nd");
+const menuBtn = document.querySelector(".mobile-menu-toggle");
+const mobilePanel = document.querySelector(".head-mid-nd");
+const body = document.body;
 
-button.addEventListener("click", () => {
-    if(content.style.display ==="none"){
-        content.style.display = "flex";
-        content.style.flexDirection = "column";
-    }else{
-        content.style.display = "none";
-    };
-});
+if (menuBtn && mobilePanel) {
+  function setPanelOpen(open) {
+    if (open) {
+      mobilePanel.classList.add('open');
+      mobilePanel.setAttribute('aria-hidden', 'false');
+      body.style.overflow = 'hidden';
+      menuBtn.setAttribute('aria-expanded', 'true');
+    } else {
+      mobilePanel.classList.remove('open');
+      mobilePanel.setAttribute('aria-hidden', 'true');
+      body.style.overflow = '';
+      menuBtn.setAttribute('aria-expanded', 'false');
+      const svcBtn = mobilePanel.querySelector('.services-link');
+      const svcList = mobilePanel.querySelector('.services-dropdown');
+      if (svcBtn && svcList && svcList.classList.contains('show')) {
+        svcList.classList.remove('show');
+        svcList.setAttribute('aria-hidden', 'true');
+        svcBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+
+  menuBtn.addEventListener('click', () => setPanelOpen(!mobilePanel.classList.contains('open')));
+  menuBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      setPanelOpen(!mobilePanel.classList.contains('open'));
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!mobilePanel.classList.contains('open')) return;
+    if (!mobilePanel.contains(e.target) && !menuBtn.contains(e.target)) {
+      setPanelOpen(false);
+    }
+  });
+}
+
+const svcToggle = document.querySelector('.head-mid-nd .services-link');
+const svcList = document.querySelector('.head-mid-nd .services-dropdown');
+
+if (svcToggle && svcList) {
+  svcToggle.addEventListener('click', (e) => {
+    const isOpen = svcList.classList.toggle('show');
+    svcList.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    svcToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  svcToggle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      svcToggle.click();
+    }
+  });
+}
 
 const fillQuoteBtn = document.querySelector(".get-started");
 

@@ -73,7 +73,7 @@ header a{
 
 .dropdown{
     display: none;
-    i{
+    .bx-menu{
         position: relative;
         font-size: 40px;
         background-color: rgba(25, 25, 71, .2);
@@ -84,24 +84,40 @@ header a{
     }
     div{
         position: absolute;
-        right: 3rem;
+        left: 0;
         display: none;
-        margin-top: 45px;
+        margin-top: 70px;
         flex-direction: column;
-        background-color: rgba(25, 25, 71, .3);
+        background-color: rgb(255, 255, 255);
         backdrop-filter: blur(5px);
-        padding: 10px;
-        gap: 5px;
-        border-radius: 10px;
+        padding: 1rem;
+        padding-top: 2rem;
+        gap: 20px;
+        height: 100vh;
+        box-shadow: 0 20px 10px rgba(0, 0, 0, .85);
+        width: 45vw;
+        i{
+            align-items: center;
+            font-size: 25px;
+        }
+        .third-a{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid rgba(10, 11, 95, 0.163);
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgba(7, 212, 248, .07);
+            transform: translateX(-5px);
+            position: relative;
+        }
         a{
-            font-size: 23px;
+            font-size: 17px;
             font-weight: bold;
             color: rgba(25, 25, 71, 1);
-        }
-        a:hover{
-            background-color: rgba(255, 255, 255, 1);
-            padding: 1px;
-            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     }
 }
@@ -112,9 +128,15 @@ header a{
     border: none;
     border-radius: 10px;
     font-size: 20px;
-    width: 8rem;
+    width: 10rem;
     height: 2rem;
     transform: translateY(-3px);
+}
+
+.dropdown-child{
+    display: none;
+    flex-direction: column;
+    position: absolute;
 }
 
 .sect1{
@@ -975,6 +997,8 @@ footer{
     main{
         .main-text{
             p{
+                white-space: normal;
+                width: 90%;
                 transform: translateY(-20px);
             }
         }

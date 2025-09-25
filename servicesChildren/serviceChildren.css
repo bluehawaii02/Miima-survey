@@ -438,13 +438,16 @@ footer{
             justify-content: space-between;
             .sect3-div1{
                 padding: 0;
-                padding-right: 8px;
+                padding-right: 5px;
                 margin-left: 0;
+                width: 35%;
                 ul{
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
                     li{
+                        display: flex;
+                        flex-direction: row;
                         margin-left: 0;
                         padding-left: 0;
                         gap: 0;
@@ -471,12 +474,16 @@ footer{
 @media(max-width:1105px){
     main{
         .sect3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
             .sect3-div1{
-                width: 33%;
+                width: 50%;
                 padding-left: 0;
             }
             .sect3-div2{
-                width: 63%;
+                width: 85%;
             }
         }
     }
@@ -486,20 +493,14 @@ footer{
         }
     }
 }
-
-@media(max-width:1052px){
+@media(max-width:1010px){
     main{
         .sect3{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            .sect3-div1{
-                width: 50%;
-            }
+            width: 100%;
+            padding-inline: 0;
+            margin-inline: 0;
             .sect3-div2{
-                width: 70%;
+                width: 90%;
             }
         }
     }
@@ -556,6 +557,8 @@ footer{
                     div{
                         display: flex;
                         width: 100%;
+                        height: min-content;
+                        padding-bottom: 0;
                     }
                 }
                 
@@ -564,6 +567,11 @@ footer{
     }
 }
 @media(max-width:890px){
+    header{
+        .miima-contact-logo{
+            width: 8rem;
+        }
+    }
     main{
         .sect3{
             .sect3-div2{
