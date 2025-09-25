@@ -410,6 +410,16 @@ header{
                 transform: translateY(0);
             }
         }
+  .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 .cont-b3{
     h4{
         text-align: center;
@@ -1197,4 +1207,158 @@ footer{
         }
     }
 }
+@media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
 
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem 1rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                border-radius: 0 0 12px 12px;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav li {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            nav a {
+                width: 100%;
+                justify-content: flex-start;
+                padding: 1rem;
+                font-size: 1.1rem;
+                border-radius: 8px;
+            }
+
+            /* Mobile Services Dropdown */
+            .services-dropdown {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                margin-top: 0;
+                box-shadow: none;
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                margin-top: 0.5rem;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+
+            .services-dropdown::before {
+                display: none;
+            }
+
+            .services-dropdown.show {
+                max-height: 400px;
+            }
+
+            .services-dropdown a {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+                border-bottom: 1px solid #f7fafc;
+                background: #f7fafc;
+            }
+
+            .services-dropdown a:last-child {
+                border-bottom: none;
+            }
+
+            .services-dropdown a:hover {
+                background: #edf2f7;
+                padding-left: 1.5rem;
+            }
+
+            .services-link {
+                background: #f7fafc !important;
+                border: 1px solid #e2e8f0;
+            }
+
+            .services-link.active {
+                background: #3182ce !important;
+                color: white !important;
+            }
+
+            .services-link .fa-chevron-down {
+                transition: transform 0.3s ease;
+            }
+
+            .services-link.active .fa-chevron-down {
+                transform: rotate(180deg);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .service-category {
+                padding: 2rem;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step::after {
+                display: none;
+            }
+
+            .specialties-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-buttons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-content {
+                padding: 1rem;
+            }
+            
+            header {
+                padding: 1rem;
+            }
+
+            .service-category {
+                padding: 1.5rem;
+            }
+        }
