@@ -33,36 +33,70 @@ header{
     gap: 20px;
     color: rgba(13, 30, 73, 1);
     margin-right: 20px;
-    .service-li{
-        list-style-type: none;
-        position: relative;
-    }
-    .service-li:hover{
-        .service-child{
-            display: flex;
-        }
-    }
-    .service-child{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 1);
-        padding: 10px 10px;
-        width: 13rem;
-        box-shadow: 0 0 10px rgba(10, 11, 95, 0.863);
-        margin-top: 0;
-        padding-top: 0;
-        z-index: 100;
-        li{
-            list-style-type: none;
-            padding: 10px;
-            a{
-                font-size: 17px;
-                font-weight: 400;
-            }
-        }
-    }
 }
+
+/* ---------- Desktop dropdown styling (non-nested, safe CSS) ---------- */
+.head-mid-st .service-li {
+  list-style: none;
+  position: relative;
+}
+
+.head-mid-st .service-child {
+  display: none;                
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 220px;
+  max-width: 320px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(10,11,95,0.12);
+  z-index: 9999;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  white-space: normal;
+}
+
+.head-mid-st .service-li:hover .service-child,
+.head-mid-st .service-li:focus-within .service-child,
+.head-mid-st .service-child.open {
+  display: flex;
+}
+
+.head-mid-st .service-child li {
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.head-mid-st .service-child li a {
+  display: block;
+  width: 100%;
+  color: rgba(13,30,73,1);
+  text-decoration: none;
+  font-size: 15.5px;
+  font-weight: 600;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.head-mid-st .service-child li:hover {
+  background: #f7fafc;
+}
+
+
+@media (max-width: 1100px) {
+  .head-mid-st .service-child {
+    left: auto;
+    right: 0;
+    min-width: 200px;
+  }
+}
+
 
 .dropdown{
     position: relative;
@@ -1390,7 +1424,7 @@ footer{
   margin-right: 6px;
 }
 
-/* services dropdown inside mobile panel */
+
 .services-mobile { width: 100%; margin: 0.25rem 0; }
 .services-link {
   display: flex;
@@ -1418,7 +1452,6 @@ footer{
   border: 1px solid #eef2f6;
 }
 
-/* show state toggled by JS */
 .services-dropdown.show { max-height: 1000px; }
 
 .services-dropdown a {
@@ -1430,7 +1463,6 @@ footer{
 }
 .services-dropdown a:last-child { border-bottom: none; }
 
-/* rotate chevron when open */
 .services-dropdown.show ~ .services-link .fa,
 .services-link[aria-expanded="true"] .fa {
   transform: rotate(180deg);
@@ -1447,4 +1479,31 @@ footer{
 @media(min-width: 769px) {
   .head-mid-nd { display: none !important; }
   .mobile-menu-toggle { display: none; }
+}
+@media (max-width: 768px) {
+
+  .head-mid-st .service-child {
+    position: relative;   
+    left: auto;
+    right: auto;
+    box-shadow: none;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.28s ease, padding 0.28s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+ 
+  .head-mid-st .service-child.show {
+    max-height: 600px;
+    padding: 8px 6px;
+  }
+
+  .head-mid-st .service-child li a {
+    padding: 10px 6px;
+    font-size: 16px;
+  }
 }
