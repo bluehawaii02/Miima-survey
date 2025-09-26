@@ -141,13 +141,6 @@ header{
 .dropdown .head-mid-nd .service-child.show {
     display: flex !important;
 }
-.dropdown {
-    .head-mid-nd:hover{
-        .service-child{
-            display: flex;
-        }
-    }
-}
 main{
     .sect1{
         height: 250px;
