@@ -2,18 +2,10 @@ const DropBtn = document.querySelector(".third-a");
 const DropContentTorongei =  document.querySelector(".service-child");
 const DropIcon = document.querySelector(".bi-caret-down");
 
-
-if(DropBtn && DropContentTorongei && DropIcon){
-    DropBtn.addEventListener("click", () => {
-        if(DropContentTorongei.style.display == "none"){
-            DropContentTorongei.style.display = "flex";
-            DropIcon.classList.add("bi-caret-up");
-        }else{
-            DropContentTorongei.style.display = "none";
-            DropIcon.classList.add("bi-caret-down");
-        };
-    })
-}
+DropBtn.addEventListener("click", () => {
+    DropContentTorongei.style.display = "flex";
+    window.alert("clicked")
+})
 
 
 //let's add interactivity to the menu icon
@@ -34,3 +26,13 @@ if(menuBtnServ && navBarSide){
         }
     })
 }
+
+
+const QuoteBtns = document.querySelector(".G-quote-q");
+
+if(QuoteBtns){
+    QuoteBtns.addEventListener("click", () => {
+            window.location.href = "getQuote.html";
+            window.alert("clicked")
+        })
+    };
