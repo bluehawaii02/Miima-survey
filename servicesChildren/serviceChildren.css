@@ -138,6 +138,16 @@ header{
         }
     }
 }
+.dropdown .head-mid-nd .service-child.show {
+    display: flex !important;
+}
+.dropdown {
+    .head-mid-nd:hover{
+        .service-child{
+            display: flex;
+        }
+    }
+}
 main{
     .sect1{
         height: 250px;
@@ -728,4 +738,37 @@ footer{
             }
         }
     }
+}
+
+
+/* Ensure the dropdown can be shown when JavaScript sets display: flex 
+.head-mid-nd .service-child[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    background-color: rgba(12, 242, 234, 0.238);
+    border: 1px solid rgba(10, 11, 95, 0.363);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    z-index: 10001;
+}
+*/
+/* Alternative approach - use a class toggle instead of inline styles */
+.head-mid-nd .service-child.show {
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+    background-color: rgba(12, 242, 234, 0.238);
+    border: 1px solid rgba(10, 11, 95, 0.363);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    z-index: 10001;
 }
