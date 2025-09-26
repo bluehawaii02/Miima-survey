@@ -95,7 +95,7 @@ header a{
         height: 100vh;
         box-shadow: 0 20px 10px rgba(0, 0, 0, .85);
         width: 50vw;
-        overflow-y: scroll;
+        overflow-y: auto;
         i{
             align-items: center;
             font-size: 25px;
@@ -521,6 +521,10 @@ footer{
                 gap: 10px;
                 padding-left: 0;
                 transform: translateX(-100px);
+                a{
+                    color: rgba(255, 255, 255, 1);
+                    text-decoration: none;
+                }
                 li{
                     list-style-type: none;
                     border-right: 1px solid rgb(48, 45, 68);
@@ -893,6 +897,11 @@ footer{
         .footer-st{
             display: flex;
             flex-direction: column;
+            .right{
+                display: flex;
+                flex-direction: column;
+                margin-left: 6rem;
+            }
             .button{
                 display: none;
             }
@@ -1001,6 +1010,16 @@ footer{
             width: 90%;
         }
     }
+    .testimonials{
+        .container{
+            .testimonials-carousel{
+                height: 40rem;
+                .testimonials-slide{
+                    height: 40rem;
+                }
+            }
+        }
+    }
     .main-text{
         white-space: normal;
         width: 100%;
@@ -1035,6 +1054,19 @@ footer{
         .col-foot{
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media(max-width:415px){
+    .testimonials{
+        .container{
+            .testimonials-carousel{
+                height: 50rem;
+                .testimonials-slide{
+                    height: 40rem;
+                }
+            }
         }
     }
 }

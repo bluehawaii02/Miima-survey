@@ -44,7 +44,7 @@ header{
 .head-mid-st .service-child {
   display: none;                
   position: absolute;
-  top: calc(100% + 6px);
+  top: 5px;
   left: 0;
   min-width: 220px;
   max-width: 320px;
@@ -567,6 +567,10 @@ footer{
                 gap: 10px;
                 padding-left: 0;
                 transform: translateX(-100px);
+                a{
+                    color: rgba(255, 255, 255, 1);
+                    text-decoration: none;
+                }
                 li{
                     list-style-type: none;
                     border-right: 1px solid rgb(48, 45, 68);
@@ -892,6 +896,11 @@ footer{
         .footer-st{
             display: flex;
             flex-direction: column;
+            .right{
+                display: flex;
+                flex-direction: column;
+                margin-left: 6rem;
+            }
             .button{
                 display: none;
             }

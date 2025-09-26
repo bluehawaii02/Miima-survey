@@ -5,13 +5,12 @@ const DropIcon = document.querySelector(".bi-caret-down");
 
 if(DropBtn && DropContentTorongei && DropIcon){
     DropBtn.addEventListener("click", () => {
-        if(getComputedStyle(DropContentTorongei).display === "none"){
-            DropContentTorongei.style.display = "flex"
+        if(DropContentTorongei.style.display == "none"){
+            DropContentTorongei.style.display = "flex";
             DropIcon.classList.add("bi-caret-up");
-            window.alert("clicked")
         }else{
             DropContentTorongei.style.display = "none";
-            DropIcon.classlist = "bi-caret-down";
+            DropIcon.classList.add("bi-caret-down");
         };
     })
 }
@@ -21,14 +20,17 @@ if(DropBtn && DropContentTorongei && DropIcon){
 
 const menuBtnServ = document.querySelector(".bi-list");
 const navBarSide =  document.querySelector(".head-mid-nd");
+const body = document.body;
 
 
 if(menuBtnServ && navBarSide){
     menuBtnServ.addEventListener("click", () => {
         if(getComputedStyle(navBarSide).display === "none"){
             navBarSide.style.display = "flex";
+            body.style.overflow = "hidden";
         }else{
             navBarSide.style.display = "none";
+            body.style.overflow = "scroll";
         }
     })
 }

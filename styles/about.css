@@ -76,7 +76,7 @@ header{
         padding: 2px;
     }
     div{
-        display: flex;
+        display: none;
         flex-direction: column;
         position: fixed;
         height: 100vh;
@@ -88,6 +88,7 @@ header{
         padding-inline: 1rem;
         gap: 1rem;
         padding-top: 1rem;
+        overflow: auto;
         .third-a{
             display: flex;
             flex-direction: row;
@@ -132,6 +133,10 @@ header{
             background-color: rgba(250, 250, 250, 1);
         }
     }
+}
+
+body.no-scroll{
+    overflow-y: hidden;
 }
 
 
@@ -513,7 +518,7 @@ main{
         border-top: 5px solid rgba(0, 0, 200, 1);
         animation: fadeinUp1 2s ease;
         animation-timeline: view();
-        animation-range: -10% 30%;
+        animation-range: -10% 50%;
         h5{
             font-size: 20px;
             color: rgba(10, 11, 95, 0.863);
@@ -612,7 +617,7 @@ main{
         transform: translateY(20px);
     }
     i{
-        font-size: 25px;
+        font-size: 30px;
         outline: 0;
         transform: translateY(-10px);
     }
@@ -736,6 +741,10 @@ footer{
                 gap: 10px;
                 padding-left: 0;
                 transform: translateX(-100px);
+                a{
+                    color: rgba(250, 250, 250, 1);
+                    text-decoration: none;
+                }
                 li{
                     list-style-type: none;
                     border-right: 1px solid rgb(48, 45, 68);
@@ -1056,6 +1065,11 @@ footer{
         .footer-st{
             display: flex;
             flex-direction: column;
+            .right{
+                display: flex;
+                margin-left: 6rem;
+                flex-direction: column;
+            }
             .button{
                 display: none;
             }

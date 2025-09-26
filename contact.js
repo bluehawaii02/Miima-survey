@@ -88,13 +88,16 @@
 //let's make dropdown menu button interactive when clicked :) 
 const menu = document.querySelector(".bx-menu");
 const dropdown = document.querySelector(".head-mid-nd");
+const body = document.body;
 
 
 menu.addEventListener("click", () => {
   if(dropdown.style.display === "none"){
     dropdown.style.display = "flex";
+    body.style.overflow = "hidden";
   }else{
     dropdown.style.display ="none";
+    body.style.overflow = "scroll";
   }
 })
 

@@ -61,3 +61,20 @@ if(clearBtn && form){
         form.reset();
     })
 }
+// not really sure how to explain what I'm doing
+
+const ThirdA = document.querySelector(".third-a");
+const ThirdsContent = document.querySelector(".dropdown-grandchild");
+const body = document.body;
+
+if(ThirdA && ThirdsContent){
+    ThirdA.addEventListener("click", () => {
+        if(ThirdsContent.style.display == "none"){
+            ThirdsContent.style.display = "flex";
+            body.style.overflow = "hidden";
+        }else{
+            ThirdsContent.style.display = "none";
+            body.style.overflow = "scroll";
+        }
+    });
+}

@@ -170,11 +170,11 @@ const DropIconTorongei = document.querySelector(".bx-chevron-down");
 
 if(ShowBtn && ShowContent && DropIconTorongei){
   ShowBtn.addEventListener("click", () => {
-    if(ShowContent.style.display == "none"){
+    if(getComputedStyle(ShowContent).display === "none"){
       ShowContent.style.display = "flex";
       DropIconTorongei.classlist.add(".bx-chervon-up")
     }else{
-      ShowContent.style.display = "none"
+      ShowContent.style.display = "none";
     }
   })
 }

@@ -1,12 +1,12 @@
-const dropdown = document.querySelector(".bx-menu");
-const dropdownContent = document.querySelector(".head-mid-nd");
-const dropdownLost = document.querySelector(".head-mid-st");
+//const dropdown = document.querySelector(".bx-menu");
+//const dropdownContent = document.querySelector(".head-mid-nd");
+//const dropdownLost = document.querySelector(".head-mid-st");
 //const reviewStars = document.querySelectorAll(".review");
 const reviewMsg = document.querySelector(".review-arear");
 const nameReview = document.querySelector(".name-review");
 const reviewBtn = document.querySelector("#aboutRevBtn");
 
-if(dropdown && dropdownContent && dropdownLost){
+/*if(dropdown && dropdownContent && dropdownLost){
   dropdown.addEventListener("click", () => {
     if(dropdownContent.style.display === "none" || dropdownContent.style.display === ""){
       dropdownContent.style.display = "flex";
@@ -30,7 +30,7 @@ if(dropdown && dropdownContent){
   };
 })}else{
   console.log("third var not found")
-};
+};*/
 
 /*if(reviewStars){
   let rating = 0;
@@ -104,4 +104,18 @@ if(GoToQuote){
 
 //let's take the user to the quote using our buttons
 
+const MenuIcon = document.querySelector(".bx-menu");
+const DropShown = document.querySelector(".head-mid-nd");
+const body = document.body;
 
+if(MenuIcon && DropShown){
+  MenuIcon.addEventListener("click", () => {
+    if(DropShown.style.display == "none"){
+      DropShown.style.display = "flex";
+      body.style.overflow = "hidden";
+    }else{
+      DropShown.style.display = "none";
+      body.style.overflow = "scroll";
+    }
+  })
+}
