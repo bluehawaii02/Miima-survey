@@ -3,7 +3,7 @@ const DropContentTorongei =  document.querySelector(".service-child");
 const DropIcon = document.querySelector(".bi-caret-down");
 
 DropBtn.addEventListener("click", () => {
-    if (DropContentTorongei.style.display === "none"){
+    if (getComputedStyle(DropContentTorongei).display === "none"){
         DropContentTorongei.style.display = "flex";}
     else{
         DropContentTorongei.style.display = "none"
