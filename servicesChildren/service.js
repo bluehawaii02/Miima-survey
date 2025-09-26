@@ -1,10 +1,13 @@
-/* const DropBtn = document.querySelector(".third-a");
+const DropBtn = document.querySelector(".third-a");
 const DropContentTorongei =  document.querySelector(".service-child");
 const DropIcon = document.querySelector(".bi-caret-down");
 
 DropBtn.addEventListener("click", () => {
-    DropContentTorongei.style.display = "flex";
-    window.alert("clicked")
+    if (DropContentTorongei.style.display === "none"){
+        DropContentTorongei.style.display = "flex";}
+    else{
+        DropContentTorongei.style.display = "none"
+    }
 })
 
 
@@ -33,11 +36,11 @@ const QuoteBtns = document.querySelector(".G-quote-q");
 if(QuoteBtns){
     QuoteBtns.addEventListener("click", () => {
             window.location.href = "getQuote.html";
-            window.alert("clicked")
         })
     };
- */
-const DropBtn = document.querySelector(".third-a");
+
+
+/*const DropBtn = document.querySelector(".third-a");
 const DropContentTorongei = document.querySelector(".service-child");
 const DropIcon = document.querySelector(".bi-caret-down");
 
@@ -110,4 +113,4 @@ document.addEventListener("click", (e) => {
             body.style.overflow = "auto";
         }
     }
-});
+});*/
