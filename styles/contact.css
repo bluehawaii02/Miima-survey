@@ -75,8 +75,7 @@ header a{
     display: none;
     .bx-menu{
         position: relative;
-        font-size: 40px;
-        background-color: rgba(25, 25, 71, .2);
+        font-size: 45px;
         padding: 2px;
         border-radius: 5px;
         align-items: center;

@@ -170,12 +170,12 @@ header{
 
 .dropdown i{
     display: none;
-    margin-top: 6px;
+    margin-top: 0;
     position: relative;
     font-size: 20rem;
     color: rgba(13, 30, 73, 1);
-    transform: translateY(-8px);
-    background-color: rgba(13, 30, 73, .2);
+    transform: translateY(70px);
+    transform: translateX(30px);
     border-radius: 3px;
 }
 
@@ -288,6 +288,7 @@ header{
     align-items: center;
     width: 35%;
     height: 25rem;
+    padding-bottom: 10px;
     box-shadow: 0 0 10px rgba(62, 116, 255, 0.979);
     img{
         width: 100%;
@@ -1404,12 +1405,6 @@ footer{
                 padding: 1rem;
             }
             
-<<<<<<< HEAD
-=======
-            header {
-                padding: 1rem;
-            }
->>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
 
             .service-category {
                 padding: 1.5rem;
@@ -1424,11 +1419,7 @@ footer{
   display: flex;
   flex-direction: column;
   position: fixed;
-<<<<<<< HEAD
-  top: 3.1rem; /* header height */
-=======
-  top: 5.5rem; /* header height */
->>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
+  top: 3rem; /* header height */
   left: 0;
   right: 0;
   bottom: 0;
@@ -1436,10 +1427,8 @@ footer{
   z-index: 1500;
   padding: 1rem;
   overflow-y: auto;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
->>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
 }
 
 /* mobile menu toggle icon */
@@ -1534,7 +1523,6 @@ footer{
     font-size: 16px;
   }
 }
-<<<<<<< HEAD
 @media(max-width:705px){
     .cont2{
         .cont2-content{
@@ -1548,5 +1536,3 @@ footer{
         }
     }
 }
-=======
->>>>>>> 65ab10086dec1a3aecc0c05c9457290c3b285645

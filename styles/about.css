@@ -887,11 +887,11 @@ footer{
 
 @media (max-width:810px){
     header{
-        height: 6rem;
+        height: 5rem;
     }
     .miima-about-logo{
         width: 8rem;
-        height: 7rem;
+        height: 5rem;
     }
     .head-mid-st-about{
         display: flex;
@@ -981,7 +981,7 @@ footer{
     .testimonials{
         .container{
             .testimonials-carousel{
-                background-color: red;
+                height: 40rem;
                 .testimonials-slide{
                     display: flex;
                     flex-direction: column;
@@ -1086,7 +1086,8 @@ footer{
 
 @media (max-width: 625px){
     .miima-about-logo{
-        width: 5.5rem;
+        width: 6.5rem;
+        height: 5rem;
     }
     .head-mid-st-about{
         gap: 5px;
