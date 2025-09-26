@@ -160,3 +160,21 @@ let slideIndex = 1;
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
+
+
+//let's make it possible to navigate to the services pages--the children services-just read the code you'll know what I'm talkig about
+
+const ShowBtn = document.querySelector(".third-a");
+const ShowContent = document.querySelector(".dropdown-grandchild");
+const DropIconTorongei = document.querySelector(".bx-chevron-down");
+
+if(ShowBtn && ShowContent && DropIconTorongei){
+  ShowBtn.addEventListener("click", () => {
+    if(ShowContent.style.display == "none"){
+      ShowContent.style.display = "flex";
+      DropIconTorongei.classlist.add(".bx-chervon-up")
+    }else{
+      ShowContent.style.display = "none"
+    }
+  })
+}
