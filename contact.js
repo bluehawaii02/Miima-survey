@@ -145,3 +145,22 @@ document.addEventListener("click", (e) => {
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
+
+
+//nav bar on smaller screens.
+
+const ServBtn = document.querySelector(".third-a");
+const ShownTorongei = document.querySelector(".dropdown-grandchild");
+const DownIcon = document.querySelector(".bx-chevron-down");
+
+if(ServBtn && ShownTorongei && DownIcon){
+  ServBtn.addEventListener("click", () => {
+    if(ShownTorongei.style.display == "none"){
+      ShownTorongei.style.display = "flex";
+      DownIcon.classList.add("bx-chevron-up");
+    }else{
+      ShownTorongei.style.display ="none";
+      DownIcon.classList = "bx-chevron-down"
+    }
+  });
+}

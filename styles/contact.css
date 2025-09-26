@@ -95,7 +95,8 @@ header a{
         gap: 20px;
         height: 100vh;
         box-shadow: 0 20px 10px rgba(0, 0, 0, .85);
-        width: 45vw;
+        width: 50vw;
+        overflow-y: scroll;
         i{
             align-items: center;
             font-size: 25px;
@@ -109,7 +110,35 @@ header a{
             padding: 10px;
             background-color: rgba(7, 212, 248, .07);
             transform: translateX(-5px);
+            cursor: pointer;
+        }
+        .dropdown-grandchild{
+            display: none;
+            flex-direction: column;
+            left: 0;
+            background-color: transparent;
             position: relative;
+            margin-top: -15px;
+            margin-left: -20px;
+            padding-top: 0;
+            ul{
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                background-color: rgba(7, 212, 248, .07);
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-top: 0;
+                border: 1px solid rgba(10, 11, 95, 0.163);
+                border-radius: 5px;
+                gap: 15px;
+                padding-inline: 3px;
+                li{
+                    a{
+                        color: rgba(0, 0, 0, .85);
+                    }
+                }
+            }
         }
         a{
             font-size: 17px;
@@ -133,11 +162,7 @@ header a{
     transform: translateY(-3px);
 }
 
-.dropdown-child{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-}
+
 
 .sect1{
     height: 250px;
