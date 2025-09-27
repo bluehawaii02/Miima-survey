@@ -23,6 +23,8 @@ header{
         margin-right: 30px;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 20px;
         a{
             text-decoration: none;
             font-size: 19px;
@@ -793,12 +795,12 @@ footer{
                     }
                 }
             }
-            .on-side{
+/*           .on-side{
                 padding-top: 30px;
                 img:nth-last-of-type(1){
                     display: block;
                 }
-            }
+            }*/
         }
     }
 }
