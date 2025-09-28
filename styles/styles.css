@@ -157,6 +157,10 @@ header{
     background-color: rgb(9, 41, 124);
     color: rgba(255, 255, 255, 1);
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     font-size: 20px;
     width: 8rem;
