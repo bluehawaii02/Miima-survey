@@ -163,3 +163,16 @@ if(ContArchitect){
         window.location.href = "contact.html";
     })
 };
+
+
+const currentPage = window.location.pathname.split("/").pop();
+
+  // Select all nav links
+  const navLinks = document.querySelectorAll(".s-learn-react");
+
+  // Add 'active' class to the matching link
+  navLinks.forEach(link => {
+    if(link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });

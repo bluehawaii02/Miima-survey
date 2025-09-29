@@ -168,6 +168,10 @@ header{
     transform: translateY(-3px);
 }
 
+.s-learn-react.active{
+    background: linear-gradient(to right, rgb(5, 2, 43), rgb(48, 6, 106));
+}
+
 /*.menu-icon{
     position: relative;
 }*/
