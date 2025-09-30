@@ -9,7 +9,7 @@
   const hpEl = root.querySelector('#hp');
   const btn = root.querySelector('#contactSubmitBtn');
   const statusEl = root.querySelector('#contactStatus');
-  //const API = "https://121559faa5fe.ngrok-free.app";
+  const API = "https://miima-survey.vercel.app";
 
   function setStatus(text, type='info') {
     statusEl.textContent = text;
@@ -26,7 +26,7 @@
     if (!name || name.length < 2) return 'Please enter your name (min 2 characters).';
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return 'Please enter a valid email address.';
     if (!message || message.length < 10) return 'Please enter a message (min 10 characters).';
-    if (hpEl.value) return 'Spam detected.'; // honeypot should be empty
+    if (hpEl.value) return 'Spam detected.'; 
     return null;
   }
 
@@ -37,8 +37,7 @@
     const payload = {
       name: nameEl.value.trim(),
       email: emailEl.value.trim(),
-      // phone is optional; add if you later add a phone field
-      subject: 'Website Contact',                // backend expects a subject; set a sensible default
+      //subject: 'Website Contact',               
       message: msgEl.value.trim(),
       hp: hpEl.value || ''
     };
@@ -60,7 +59,7 @@
         setStatus(out.message || 'Could not send your message. Please try again.', 'error');
       } else {
         setStatus(out.message || 'Thanks! We received your message.', 'success');
-        // optional: show reference code if backend returns it
+        
         if (out.ref) setStatus(`${out.message} Ref: ${out.ref}`, 'success');
         // clear the form
         nameEl.value = '';
@@ -77,7 +76,6 @@
 
   btn.addEventListener('click', submitContact);
 
-  // accessibility: submit on Ctrl/Cmd+Enter inside textarea
   msgEl.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
       submitContact();
@@ -85,7 +83,7 @@
   });
 })();
 
-//let's make dropdown menu button interactive when clicked :) 
+
 const menu = document.querySelector(".bx-menu");
 const dropdown = document.querySelector(".head-mid-nd");
 const body = document.body;
@@ -141,16 +139,14 @@ document.addEventListener("click", (e) => {
             showSlide(slideIndex += 1);
         }
         
-        // Auto-advance slides every 7 seconds (nice slow pace for reading two cards)
+       
         setInterval(nextSlide, 7000);
 
-        // Smooth scrolling for navigation
+        
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
 
-
-//nav bar on smaller screens.
 
 const ServBtn = document.querySelector(".third-a");
 const ShownTorongei = document.querySelector(".dropdown-grandchild");
