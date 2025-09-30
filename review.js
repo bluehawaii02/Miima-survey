@@ -1,4 +1,4 @@
-const API = "https://121559faa5fe.ngrok-free.app";
+const API = "https://miima-survey.vercel.app";
 
 const reviewStars = Array.from(document.querySelectorAll('.star-reviews .review'));
 let currentRating = 0;
@@ -84,7 +84,7 @@ async function submitReview() {
 
 btn.addEventListener('click', submitReview);
 
-//let's take the user to the quote page using buttons
+
 
 /*const GquoteBtn = document.querySelectorAll(".G-quote-a");
 
@@ -153,16 +153,14 @@ let slideIndex = 1;
             showSlide(slideIndex += 1);
         }
         
-        // Auto-advance slides every 7 seconds (nice slow pace for reading two cards)
+
         setInterval(nextSlide, 7000);
 
-        // Smooth scrolling for navigation
         function scrollToContact() {
             document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }
 
 
-//let's make it possible to navigate to the services pages--the children services-just read the code you'll know what I'm talkig about
 
 const ShowBtn = document.querySelector(".third-a");
 const ShowContent = document.querySelector(".dropdown-grandchild");
